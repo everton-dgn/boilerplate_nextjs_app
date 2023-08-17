@@ -1,0 +1,12 @@
+src/ui/assets/*
+.jest
+.storybook
+.next
+yarn.lock
+.gitignore
+.prettierignore
+.gitattributes
+componentGenerator
+coverage
+storybook-static
+.tsBuildInfoFile

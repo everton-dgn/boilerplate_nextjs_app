@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/common.sh"
+
+npx --no-install
+
+yarn test
+yarn typecheck
+yarn build
