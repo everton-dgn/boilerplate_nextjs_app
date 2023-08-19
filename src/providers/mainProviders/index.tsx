@@ -1,4 +1,4 @@
-import { GlobalStyles } from 'ui/globalStyles'
+import { GlobalStyles } from 'globalStyles'
 import { MainProvidersProps } from './types'
 
 const MainProviders = ({ children }: MainProvidersProps) => (

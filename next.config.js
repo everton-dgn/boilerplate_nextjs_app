@@ -3,17 +3,17 @@
  */
 
 const nextConfig = {
+  basePath: '',
   compiler: {
     styledComponents: true
   },
   images: {
     domains: ['localhost'],
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp'],
     loader: 'default',
     path: '/_next/image'
   },
   optimizeFonts: false,
-  pageExtensions: ['page.tsx'],
   reactStrictMode: true,
   swcMinify: true,
   webpack(config) {

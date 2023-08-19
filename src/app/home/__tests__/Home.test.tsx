@@ -1,6 +1,6 @@
 import { screen, act } from '@testing-library/react'
 import { renderWithProviders, event } from 'testHelpers/providers'
-import Home from '../index.page'
+import Home from '../page'
 
 describe('[Page] Home', () => {
   it('should render a page with a title, two images and a button', () => {

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { render, RenderResult } from '@testing-library/react'
-import { MainProvider } from 'ui/providers'
+import { MainProvider } from 'providers'
 import userEvent from '@testing-library/user-event'
 
 export const event = userEvent.setup({ delay: null })

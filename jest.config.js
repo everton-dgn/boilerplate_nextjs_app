@@ -12,7 +12,6 @@ module.exports = {
     'src/tests/providers/',
     'src/@types/',
     'src/testHelpers/',
-    'stories.tsx',
     'types.ts'
   ],
   fakeTimers: {

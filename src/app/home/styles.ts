@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import T from 'ui/theme'
+import T from 'theme'
 
 export const Container = styled.main`
   display: flex;
@@ -17,7 +17,7 @@ export const WrapperImages = styled.div`
   padding: 0 ${T.spacings.sm};
   justify-content: center;
 
-  span {
+  img {
     width: 77px !important;
     min-width: 77px !important;
     height: 77px !important;
@@ -31,7 +31,7 @@ export const WrapperImages = styled.div`
   }
 
   ${T.breakpoints.tablet} {
-    span {
+    img {
       width: 155px !important;
       min-width: 155px !important;
       height: 155px !important;

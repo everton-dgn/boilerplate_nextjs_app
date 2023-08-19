@@ -32,7 +32,6 @@
     "plugin:typescript-sort-keys/recommended",
     "prettier",
     "plugin:prettier/recommended",
-    "plugin:storybook/recommended",
     "plugin:jest-dom/recommended",
     "plugin:testing-library/react",
     "plugin:jest/recommended",
@@ -103,13 +102,6 @@
     "prettier/prettier": "error"
   },
   "overrides": [
-    {
-      "files": ["*.stories.@(tsx|js|jsx)"],
-      "rules": {
-        "storybook/hierarchy-separator": "error"
-      },
-      "extends": ["plugin:storybook/recommended"]
-    },
     {
       "files": ["**/__tests__/**/*.tsx?", "**/?(*.)+(spec|test).tsx?"],
       "plugins": ["jest-dom", "testing-library", "jest"],

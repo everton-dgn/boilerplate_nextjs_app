@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import T from 'ui/theme'
+import T from 'theme'
 
 export const Grid = styled.div`
   display: flex;
