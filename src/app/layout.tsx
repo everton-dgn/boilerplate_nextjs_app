@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import { MainProvider } from 'providers'
+import 'globalStyles/reset.scss'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

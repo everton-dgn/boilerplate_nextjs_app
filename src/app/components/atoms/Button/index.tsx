@@ -1,8 +1,10 @@
-import * as S from './styles'
 import { BtnProps } from './types'
+import S from './styles.module.scss'
 
 const Button = ({ text, ...props }: BtnProps) => (
-  <S.Container {...props}>{text}</S.Container>
+  <button className={S.button} {...props}>
+    {text}
+  </button>
 )
 
 export default Button

@@ -4,9 +4,6 @@
 
 const nextConfig = {
   basePath: '',
-  compiler: {
-    styledComponents: true
-  },
   images: {
     domains: ['localhost'],
     formats: ['image/webp'],

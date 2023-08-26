@@ -1,11 +1,5 @@
-import { GlobalStyles } from 'globalStyles'
 import { MainProvidersProps } from './types'
 
-const MainProviders = ({ children }: MainProvidersProps) => (
-  <>
-    {children}
-    <GlobalStyles />
-  </>
-)
+const MainProviders = ({ children }: MainProvidersProps) => <>{children}</>
 
 export default MainProviders

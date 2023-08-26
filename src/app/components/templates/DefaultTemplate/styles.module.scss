@@ -1,0 +1,24 @@
+@use 'theme' as T;
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: T.$spacing-sm;
+}
+
+.header {
+  font-size: T.$font-size-xxxl;
+  font-weight: T.$font-weight-semi-bold;
+  margin-bottom: T.$spacing-xxl;
+}
+
+.containerPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

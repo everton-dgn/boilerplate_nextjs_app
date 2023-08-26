@@ -1,11 +1,13 @@
-import * as S from './styles'
+import S from './styles.module.scss'
 import { DefaultProps } from './types'
 
 const DefaultTemplate = ({ children }: DefaultProps) => (
-  <S.Grid>
-    <S.Header role="banner">Boilerplate</S.Header>
-    <S.ContainerPage>{children}</S.ContainerPage>
-  </S.Grid>
+  <div className={S.grid}>
+    <header className={S.header} role="banner">
+      Boilerplate
+    </header>
+    <div className={S.containerPage}>{children}</div>
+  </div>
 )
 
 export default DefaultTemplate

@@ -1,0 +1,23 @@
+@use 'theme' as T;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: T.$border-radius-sm;
+  cursor: pointer;
+  font-size: T.$font-size-xs;
+  font-weight: T.$font-weight-medium;
+  padding: T.$spacing-xs T.$spacing-xxl;
+  color: T.$color-white;
+  background-color: T.$color-tertiary;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: T.$color-tertiary-hover;
+  }
+
+  @include T.focus-style
+}

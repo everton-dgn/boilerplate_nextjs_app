@@ -1,0 +1,87 @@
+@use 'theme' as T;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  list-style: none !important;
+  outline: none;
+  font-family: T.$font-family;
+  line-height: calc(1em + 0.5rem);
+
+  @media (prefers-reduced-motion) {
+    transition: none !important;
+    animation-duration: 0ms !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  isolation: isolate;
+  background-image: linear-gradient(
+    45deg,
+    T.$color-black,
+    T.$color-secondary,
+    T.$color-primary
+  );
+  color: T.$color-white;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: break-word;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-weight: T.$font-weight-medium;
+  font-size: T.$font-size-xs;
+  font-family: T.$font-family;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: T.$border-radius-sm;
+}
+
+a,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar,
+scrollbar-width {
+  width: 16px !important;
+  background-color: T.$color-white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: T.$color-gray;
+  border-radius: 20px;
+  border: 3px solid T.$color-white;
+}
+
+:root {
+  scrollbar-color: T.$color-gray T.$color-white !important;
+  scrollbar-width: 16px !important;
+}

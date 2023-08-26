@@ -1,20 +1,22 @@
-import styled from 'styled-components'
-import T from 'theme'
+@use 'theme' as T;
 
-export const Container = styled.main`
+.container {
   display: flex;
   flex-direction: column;
-  gap: ${T.spacings.macro};
+  gap: T.$spacing-macro;
   padding: 0;
   align-items: center;
-`
+  justify-content: center;
+  flex-grow: 1;
+  height: 100%;
+}
 
-export const WrapperImages = styled.div`
+.wrapperImages {
   display: flex;
   flex-wrap: wrap;
-  gap: ${T.spacings.xxl};
+  gap: T.$spacing-xxl;
   width: 100%;
-  padding: 0 ${T.spacings.sm};
+  padding: 0 T.$spacing-sm;
   justify-content: center;
 
   img {
@@ -30,7 +32,7 @@ export const WrapperImages = styled.div`
     height: 77px;
   }
 
-  ${T.breakpoints.tablet} {
+  @include T.breakpoint-min('tablet') {
     img {
       width: 155px !important;
       min-width: 155px !important;
@@ -43,9 +45,9 @@ export const WrapperImages = styled.div`
       height: 155px;
     }
   }
-`
+}
 
-export const Title = styled.h1`
-  font-weight: ${T.fonts.weights.regular};
+.title {
+  font-weight: T.$font-weight-regular;
   text-align: center;
-`
+}

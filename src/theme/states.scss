@@ -1,0 +1,8 @@
+@use "./colors";
+
+@mixin focus-style {
+  &:focus {
+    outline: 4px solid colors.$color-focus;
+    outline-offset: 1px;
+  }
+}
