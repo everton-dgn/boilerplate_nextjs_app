@@ -3,16 +3,14 @@
  */
 
 const nextConfig = {
-  basePath: '',
   images: {
     domains: ['localhost'],
     formats: ['image/webp'],
     loader: 'default',
     path: '/_next/image'
   },
-  optimizeFonts: false,
+  optimizeFonts: true,
   reactStrictMode: true,
-  swcMinify: true,
   webpack(config) {
     config.module.rules.push({
       issuer: /\.tsx?$/,
