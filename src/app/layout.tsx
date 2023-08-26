@@ -1,6 +1,7 @@
+import 'globalStyles/reset.scss'
 import { ReactNode } from 'react'
 import { MainProvider } from 'providers'
-import 'globalStyles/reset.scss'
+import * as C from 'app/components'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -30,7 +31,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
 
       <body>
-        <MainProvider>{children}</MainProvider>
+        <MainProvider>
+          <C.DefaultTemplate>{children}</C.DefaultTemplate>
+        </MainProvider>
       </body>
     </html>
   )
