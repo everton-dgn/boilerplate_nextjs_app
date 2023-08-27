@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import S from './styles.module.scss'
+import Image from 'next/image'
 import * as C from 'app/components'
 import { ReactComponent as LogoReact } from 'assets/images/logoReact.svg'
-import Image from 'next/image'
+import S from './styles.module.scss'
 
 export default function Home() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,13 @@ export default function Home() {
   return (
     <main className={S.container}>
       <div className={S.wrapperImages}>
-        <Image alt="Logo Nextjs" layout="fill" src="/images/logoNextjs.webp" />
+        <Image
+          alt="Logo Nextjs"
+          height={77}
+          priority
+          src="/images/logoNextjs.webp"
+          width={77}
+        />
         <LogoReact role="img" title="Logo React" />
       </div>
       <h1 className={S.title}>Nextjs + React</h1>

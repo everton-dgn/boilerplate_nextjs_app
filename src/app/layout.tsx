@@ -1,7 +1,13 @@
-import 'globalStyles/reset.scss'
 import { ReactNode } from 'react'
+import { Poppins } from 'next/font/google'
 import { MainProvider } from 'providers'
 import * as C from 'app/components'
+import 'globalStyles/reset.scss'
+
+const poppins = Poppins({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600']
+})
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,21 +22,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta content="boilerplate, nextjs, reactjs, react" name="keywords" />
         <meta content="© Éverton Toffanetto" name="copyright" />
         <meta content="#fff" name="theme-color" />
-        {/*  <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-          rel="preload"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        /> */}
-        {/* <link href="/favicon.png" rel="icon" type="image/png" />
-        <link href="/favicon.png" rel="apple-touch-icon" /> */}
+        <link href="/favicon.png" rel="icon" type="image/png" />
+        <link href="/favicon.png" rel="apple-touch-icon" />
+        <title>Home Page</title>
       </head>
 
-      <body>
+      <body className={poppins.className}>
         <MainProvider>
           <C.DefaultTemplate>{children}</C.DefaultTemplate>
         </MainProvider>
