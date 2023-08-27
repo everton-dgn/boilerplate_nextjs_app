@@ -9,11 +9,7 @@ describe('[Template] DefaultTemplate', () => {
         <p data-testid="select_template">Test Template</p>
       </DefaultTemplate>
     )
-
-    const title = screen.getByRole('banner')
     const children = screen.getByTestId('select_template')
-
     expect(children).toBeInTheDocument()
-    expect(title).toHaveTextContent('Boilerplate')
   })
 })

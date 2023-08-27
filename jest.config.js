@@ -1,18 +1,16 @@
 module.exports = {
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: [
-    'src/pages/_app.page.tsx',
-    'src/pages/index.page.tsx',
-    'src/pages/_document.page.tsx',
-    'src/ui/theme/',
-    'src/ui/components/index.tsx',
-    'src/ui/globalStyles/',
-    'src/ui/providers/',
-    'src/ui/assets/',
+    'src/theme/',
+    'src/components/index.tsx',
+    'src/globalStyles/',
+    'src/providers/',
+    'src/assets/',
     'src/tests/providers/',
     'src/@types/',
     'src/testHelpers/',
-    'types.ts'
+    'types.ts',
+    'styles.module.scss'
   ],
   fakeTimers: {
     enableGlobally: true
@@ -21,7 +19,7 @@ module.exports = {
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'node'],
   moduleNameMapper: {
-    '^.+\\.css$': '<rootDir>/src/testHelpers/mocks/style.ts',
+    '^.+\\.scss$': '<rootDir>/src/testHelpers/mocks/style.ts',
     '^.+\\.svg$': '<rootDir>/src/testHelpers/mocks/svg.ts'
   },
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
