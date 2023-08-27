@@ -11,10 +11,19 @@
   outline: none;
   font-family: T.$font-family;
   line-height: calc(1em + 0.5rem);
+}
 
-  @media (prefers-reduced-motion) {
-    transition: none !important;
-    animation-duration: 0ms !important;
+@media (prefers-reduced-motion: reduce) {
+  body *,
+  body *::before,
+  body *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: -1ms !important;
+    transition-duration: 1ms !important;
   }
 }
 
@@ -47,6 +56,12 @@ h6 {
   word-break: break-word;
 }
 
+b,
+strong {
+  font-weight: bolder;
+}
+
+optgroup,
 body,
 input,
 select,
@@ -55,6 +70,7 @@ button {
   font-weight: T.$font-weight-medium;
   font-size: T.$font-size-xs;
   font-family: T.$font-family;
+  margin: 0;
 }
 
 button {
@@ -82,6 +98,24 @@ a:active {
 :focus:not(:focus-visible) {
   box-shadow: none;
   outline: 0;
+}
+
+mark {
+  &::before,
+  &::after {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    content: ' [start of highlighted text] ';
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &::after {
+    content: ' [end of highlighted text] ';
+  }
 }
 
 ::-webkit-scrollbar,
