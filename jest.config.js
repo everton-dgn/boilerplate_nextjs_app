@@ -1,8 +1,12 @@
 module.exports = {
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: [
+    'src/app/page.tsx',
+    'src/app/layout.tsx',
+    'src/app/global-error.tsx',
+    'src/app/components/index.tsx',
+    'src/app/not-found.tsx',
     'src/theme/',
-    'src/components/index.tsx',
     'src/globalStyles/',
     'src/providers/',
     'src/assets/',
