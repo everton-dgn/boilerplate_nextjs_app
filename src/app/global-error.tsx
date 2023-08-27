@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import * as C from 'app/components'
+import * as O from 'app/components/organisms'
 import { ErrorProps } from './types'
 import poppins from 'globalStyles/fontFamily'
 
@@ -29,7 +29,7 @@ export default function GlobalError({ error, reset }: ErrorProps) {
       </head>
 
       <body className={poppins.className}>
-        <C.Error reset={reset} />
+        <O.Error reset={reset} />
       </body>
     </html>
   )
