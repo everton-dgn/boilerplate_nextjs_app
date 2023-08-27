@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import * as A from 'app/components/atoms'
+import Button from 'app/components/atoms/Button'
 import { ReactComponent as LogoReact } from 'assets/images/logoReact.svg'
 import S from './styles.module.scss'
 
@@ -26,7 +26,7 @@ export default function Home() {
           <LogoReact role="img" title="Logo React" />
         </div>
         <h1 className={S.title}>Nextjs + React</h1>
-        <A.Button
+        <Button
           aria-label={`COUNT: ${count}`}
           onClick={() => setCount(prevState => prevState + 1)}
           text={`COUNT: ${count}`}

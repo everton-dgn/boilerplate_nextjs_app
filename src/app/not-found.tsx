@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import * as O from 'app/components/organisms'
+import Error from 'app/components/organisms/Error'
 import poppins from 'globalStyles/fontFamily'
 
 export default function NotFound() {
@@ -25,7 +25,7 @@ export default function NotFound() {
       </head>
 
       <body className={poppins.className}>
-        <O.Error reset={() => replace('/')} />
+        <Error reset={() => replace('/')} />
       </body>
     </html>
   )

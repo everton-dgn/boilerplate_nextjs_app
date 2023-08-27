@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { MainProvider } from 'providers'
-import * as T from 'app/components/templates'
+import DefaultTemplate from 'app/components/templates/DefaultTemplate'
 import 'globalStyles/reset.scss'
 import poppins from 'globalStyles/fontFamily'
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
       <body className={poppins.className}>
         <MainProvider>
-          <T.DefaultTemplate>{children}</T.DefaultTemplate>
+          <DefaultTemplate>{children}</DefaultTemplate>
         </MainProvider>
       </body>
     </html>
