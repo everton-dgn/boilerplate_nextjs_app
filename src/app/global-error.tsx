@@ -1,10 +1,16 @@
-import { ReactNode } from 'react'
-import { MainProvider } from 'providers'
+'use client'
+
+import { useEffect } from 'react'
 import * as C from 'app/components'
-import 'globalStyles/reset.scss'
+import { ErrorProps } from './types'
 import poppins from 'globalStyles/fontFamily'
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function GlobalError({ error, reset }: ErrorProps) {
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.error(error)
+  }, [error])
+
   return (
     <html lang="pt-BR">
       <head>
@@ -19,13 +25,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta content="#fff" name="theme-color" />
         <link href="/favicon.png" rel="icon" type="image/png" />
         <link href="/favicon.png" rel="apple-touch-icon" />
-        <title>Home Page</title>
+        <title>Error Page</title>
       </head>
 
       <body className={poppins.className}>
-        <MainProvider>
-          <C.DefaultTemplate>{children}</C.DefaultTemplate>
-        </MainProvider>
+        <C.Error reset={reset} />
       </body>
     </html>
   )

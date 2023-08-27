@@ -59,7 +59,8 @@
 }
 
 @keyframes rotate-partial {
-  80%, 100% {
+  80%,
+  100% {
     transform: rotate(45deg);
   }
 }

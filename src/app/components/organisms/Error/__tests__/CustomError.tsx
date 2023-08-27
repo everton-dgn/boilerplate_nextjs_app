@@ -1,10 +1,10 @@
 import { screen } from '@testing-library/react'
 import { renderWithProviders } from 'testHelpers/providers'
-import CustomError from '../page'
+import Error from '..'
 
 describe('[Page] CustomError', () => {
   it('should the following section title: Page not found!', () => {
-    renderWithProviders(<CustomError />)
+    renderWithProviders(<Error reset={jest.fn()} />)
 
     const heading = screen.getByRole('banner')
     const title = screen.getByRole('heading', {

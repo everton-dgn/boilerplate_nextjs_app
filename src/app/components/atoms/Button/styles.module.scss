@@ -19,5 +19,5 @@
     background-color: T.$color-tertiary-hover;
   }
 
-  @include T.focus-style
+  @include T.focus-style;
 }

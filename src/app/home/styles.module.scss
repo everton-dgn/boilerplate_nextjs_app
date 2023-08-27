@@ -3,6 +3,20 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: T.$spacing-sm;
+}
+
+.header {
+  font-size: T.$font-size-xxxl;
+  font-weight: T.$font-weight-semi-bold;
+  margin-bottom: T.$spacing-xxl;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
   gap: T.$spacing-macro;
   padding: 0;
   align-items: center;
