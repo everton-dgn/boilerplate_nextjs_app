@@ -69,6 +69,21 @@ a:active {
   text-decoration: none;
 }
 
+:focus {
+  outline: 4px solid T.$color-focus;
+  outline-offset: 1px;
+}
+
+:focus-visible {
+  outline: 4px solid T.$color-focus;
+  outline-offset: 1px;
+}
+
+:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}
+
 ::-webkit-scrollbar,
 scrollbar-width {
   width: 16px !important;

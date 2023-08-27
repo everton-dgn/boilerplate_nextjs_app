@@ -18,6 +18,4 @@
   &:hover {
     background-color: T.$color-tertiary-hover;
   }
-
-  @include T.focus-style;
 }
