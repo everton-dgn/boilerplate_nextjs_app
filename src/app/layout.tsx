@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
-import { MainProvider } from 'providers'
+import MainProvider from 'providers/mainProviders'
 import DefaultTemplate from 'app/components/templates/DefaultTemplate'
-import 'globalStyles/reset.scss'
 import poppins from 'globalStyles/fontFamily'
+import 'globalStyles/reset.scss'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

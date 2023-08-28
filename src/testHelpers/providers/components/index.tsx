@@ -1,9 +1,6 @@
 import { ReactNode } from 'react'
 import { render, RenderResult } from '@testing-library/react'
-import { MainProvider } from 'providers'
-import userEvent from '@testing-library/user-event'
-
-export const event = userEvent.setup({ delay: null })
+import MainProvider from 'providers/mainProviders'
 
 const renderWithProviders = (children: ReactNode): RenderResult =>
   render(<MainProvider>{children}</MainProvider>)

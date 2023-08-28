@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react'
-import { MainProvider } from 'providers'
+import MainProvider from 'providers/mainProviders'
 import { RenderHooksProviderProps, WrapperProps } from './types'
 
 const wrapper = ({ children }: WrapperProps) => (

@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react'
 import Error from 'app/components/organisms/Error'
-import { ErrorProps } from './types'
 import poppins from 'globalStyles/fontFamily'
+import { ErrorProps } from './types'
 
 export default function GlobalError({ error, reset }: ErrorProps) {
   useEffect(() => {
