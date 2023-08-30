@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import MainProvider from 'providers/mainProviders'
-import DefaultTemplate from 'app/components/templates/DefaultTemplate'
+import DefaultTemplate from 'components/templates/DefaultTemplate'
 import poppins from 'globalStyles/fontFamily'
 import 'globalStyles/reset.scss'
 

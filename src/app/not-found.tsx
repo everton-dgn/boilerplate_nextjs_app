@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import Error from 'app/components/organisms/Error'
+import Error from 'components/organisms/Error'
 import poppins from 'globalStyles/fontFamily'
 
 export default function NotFound() {

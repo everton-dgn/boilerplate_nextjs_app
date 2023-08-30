@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Button from 'app/components/atoms/Button'
+import Button from 'components/atoms/Button'
 import { ReactComponent as LogoReact } from 'assets/images/logoReact.svg'
 import S from './styles.module.scss'
 

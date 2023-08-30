@@ -1,5 +1,5 @@
 import S from './styles.module.scss'
-import Button from 'app/components/atoms/Button'
+import Button from 'components/atoms/Button'
 import { ErrorProps } from './types'
 
 const Error = ({ reset }: ErrorProps) => (
