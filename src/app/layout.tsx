@@ -4,7 +4,7 @@ import DefaultTemplate from 'components/templates/DefaultTemplate'
 import poppins from 'globalStyles/fontFamily'
 import 'globalStyles/reset.scss'
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="pt-BR">
       <head>
@@ -30,3 +30,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   )
 }
+
+export default RootLayout

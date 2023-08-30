@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import Error from 'components/organisms/Error'
 import poppins from 'globalStyles/fontFamily'
 
-export default function NotFound() {
+const NotFound = () => {
   const { replace } = useRouter()
 
   return (
@@ -30,3 +30,5 @@ export default function NotFound() {
     </html>
   )
 }
+
+export default NotFound

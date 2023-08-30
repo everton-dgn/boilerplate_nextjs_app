@@ -6,7 +6,7 @@ import Button from 'components/atoms/Button'
 import { ReactComponent as LogoReact } from 'assets/images/logoReact.svg'
 import S from './styles.module.scss'
 
-export default function Home() {
+const Home = () => {
   const [count, setCount] = useState(0)
 
   return (
@@ -35,3 +35,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

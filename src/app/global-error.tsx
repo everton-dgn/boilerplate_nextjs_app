@@ -5,7 +5,7 @@ import Error from 'components/organisms/Error'
 import poppins from 'globalStyles/fontFamily'
 import { ErrorProps } from './types'
 
-export default function GlobalError({ error, reset }: ErrorProps) {
+const GlobalError = ({ error, reset }: ErrorProps) => {
   useEffect(() => {
     // eslint-disable-next-line no-console
     console.error(error)
@@ -34,3 +34,5 @@ export default function GlobalError({ error, reset }: ErrorProps) {
     </html>
   )
 }
+
+export default GlobalError
