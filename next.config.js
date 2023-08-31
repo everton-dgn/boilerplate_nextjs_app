@@ -10,15 +10,7 @@ const nextConfig = {
     path: '/_next/image'
   },
   optimizeFonts: true,
-  reactStrictMode: true,
-  webpack(config) {
-    config.module.rules.push({
-      issuer: /\.tsx?$/,
-      test: /\.svg$/i,
-      use: [{ loader: '@svgr/webpack', options: { exportType: 'named' } }]
-    })
-    return config
-  }
+  reactStrictMode: true
 }
 
 module.exports = nextConfig
