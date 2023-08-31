@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react'
 import renderWithProviders from 'testHelpers/providers/components'
 import Error from '..'
 
-describe('[Page] CustomError', () => {
+describe('[Component] CustomError', () => {
   it('should the following section title: Page not found!', () => {
     renderWithProviders(<Error reset={jest.fn()} />)
 

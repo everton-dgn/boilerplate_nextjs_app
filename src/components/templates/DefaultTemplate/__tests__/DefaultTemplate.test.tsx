@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react'
 import renderWithProviders from 'testHelpers/providers/components'
 import DefaultTemplate from '..'
 
-describe('[Template] DefaultTemplate', () => {
+describe('[Component] DefaultTemplate', () => {
   it('should render a children and a title', () => {
     renderWithProviders(
       <DefaultTemplate>
