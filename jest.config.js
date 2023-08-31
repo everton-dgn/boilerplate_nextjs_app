@@ -18,6 +18,7 @@ module.exports = {
     'src/@types/',
     'src/testHelpers/',
     'types.ts',
+    'loading.tsx',
     'styles.module.scss'
   ],
   fakeTimers: {
