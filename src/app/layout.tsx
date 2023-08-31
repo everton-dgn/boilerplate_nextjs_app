@@ -19,7 +19,6 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <meta content="#fff" name="theme-color" />
         <link href="/favicon.png" rel="icon" type="image/png" />
         <link href="/favicon.png" rel="apple-touch-icon" />
-        <title>Home Page</title>
       </head>
 
       <body className={poppins.className}>

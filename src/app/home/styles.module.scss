@@ -34,16 +34,7 @@
   justify-content: center;
 
   img {
-    width: 77px !important;
-    min-width: 77px !important;
-    height: 77px !important;
     position: relative !important;
-  }
-
-  svg {
-    width: 87px;
-    min-width: 87px;
-    height: 77px;
   }
 
   @include T.breakpoint-min('tablet') {
