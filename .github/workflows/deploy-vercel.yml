@@ -11,13 +11,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
       - name: Install dependencies
         run: yarn install
+
       - name: Build
         run: yarn build
-      - name: Deploy
+
+      - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
