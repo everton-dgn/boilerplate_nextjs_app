@@ -9,7 +9,7 @@ const Error = ({ reset }: ErrorProps) => (
     </header>
     <main className={S.container}>
       <h1 className={S.title}>Page not found!</h1>
-      <Button onClick={reset} text="Try again" />
+      <Button label="Try again" onClick={reset} />
     </main>
   </div>
 )

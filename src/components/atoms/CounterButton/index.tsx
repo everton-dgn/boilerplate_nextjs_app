@@ -9,8 +9,8 @@ const CounterButton = () => {
   return (
     <Button
       aria-label={`COUNT: ${count}`}
+      label={`COUNT: ${count}`}
       onClick={increment}
-      text={`COUNT: ${count}`}
     />
   )
 }
