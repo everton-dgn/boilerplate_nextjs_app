@@ -30,6 +30,6 @@
       }
     ]
   },
-  "include": ["src", ".next/types/**/*.ts"],
+  "include": ["src", ".next/types/**/*.ts", "src/@types/**/*.d.ts"],
   "exclude": ["node_modules", ".next"]
 }
