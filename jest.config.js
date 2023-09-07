@@ -20,7 +20,6 @@ module.exports = {
   },
   globalSetup: '<rootDir>/.jest/timezoneMock.ts',
   moduleDirectories: ['node_modules', '<rootDir>/'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'node'],
   moduleNameMapper: {
     '^.+\\.scss$': '<rootDir>/src/testHelpers/mocks/style.ts',
     '^.+\\.svg$': '<rootDir>/src/testHelpers/mocks/svg.ts'
