@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import Error from 'components/organisms/Error'
-import poppins from 'globalStyles/fontFamily'
+import poppins from 'theme/fontFamily'
 
 const NotFound = () => {
   const { replace } = useRouter()
