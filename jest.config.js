@@ -21,7 +21,7 @@ module.exports = {
   globalSetup: '<rootDir>/.jest/timezoneMock.ts',
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleNameMapper: {
-    '^.+\\.scss$': '<rootDir>/src/testHelpers/mocks/style.ts',
+    '^.+\\.(css|scss)$': '<rootDir>/src/testHelpers/mocks/style.ts',
     '^.+\\.svg$': '<rootDir>/src/testHelpers/mocks/svg.ts'
   },
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
@@ -30,7 +30,6 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['/node_modules', '/.next/'],
-  testRegex: '(/__tests__/.*|(\\.|/)(test))\\.tsx?$',
   transform: {
     '\\.(webp|png|gif|svg|jpg)$':
       '<rootDir>/src/testHelpers/mocks/assetsTransformer.js',
