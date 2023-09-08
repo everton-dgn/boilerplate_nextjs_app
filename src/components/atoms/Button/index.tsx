@@ -1,7 +1,7 @@
-import { BtnProps } from './types'
+import { ButtonProps } from './types'
 import S from './styles.module.scss'
 
-const Button = ({ label, ...props }: BtnProps) => (
+const Button = ({ label, ...props }: ButtonProps) => (
   <button className={S.button} {...props}>
     {label}
   </button>
