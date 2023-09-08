@@ -13,6 +13,7 @@ module.exports = {
     'src/testHelpers/',
     'types.ts',
     'loading.tsx',
+    'stories.tsx',
     'styles.module.scss'
   ],
   fakeTimers: {

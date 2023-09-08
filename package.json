@@ -21,6 +21,8 @@
     "test:w": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
     "check:update": "yarn upgrade-interactive --latest",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
     "prepare": "husky install"
   },
   "husky": {
@@ -38,6 +40,16 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@storybook/addon-a11y": "^7.4.0",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/jest": "^0.2.2",
+    "@storybook/nextjs": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
     "@testing-library/dom": "^9.3.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^14.0.0",
@@ -62,6 +74,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-testing-library": "^5.11.0",
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
     "husky": "^8.0.3",
@@ -71,6 +84,8 @@
     "prettier": "^3.0.2",
     "sass": "^1.66.1",
     "sharp": "^0.32.5",
+    "storybook": "^7.4.0",
+    "storybook-mobile": "^1.0.1",
     "typescript": "^5.2.0"
   }
 }

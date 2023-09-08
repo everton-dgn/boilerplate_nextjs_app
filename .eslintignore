@@ -1,4 +1,5 @@
-src/ui/assets/*
+public/*
+.storybook
 .jest
 .next
 yarn.lock
@@ -6,4 +7,6 @@ yarn.lock
 .prettierignore
 .gitattributes
 coverage
+storybook-static
 .tsBuildInfoFile
+jest.config.js

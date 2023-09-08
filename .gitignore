@@ -22,17 +22,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-#.env.development
-#.env.production
-#.env*.local
-
 # vercel
 .vercel
 
 # jetbrains and vscode
 .idea/
 .vscode/
+
+# storybook
+/storybook-static
+/src/stories
 
 # typescript incremental features
 /.tsBuildInfoFile/

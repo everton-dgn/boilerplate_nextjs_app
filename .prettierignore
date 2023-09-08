@@ -1,8 +1,10 @@
-src/ui/assets/*
+public/*
+.storybook
 .next
 yarn.lock
 .gitignore
 .eslintignore
 .gitattributes
 coverage
+storybook-static
 .tsBuildInfoFile
