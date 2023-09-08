@@ -1,10 +1,12 @@
 public/*
 .storybook
+.jest
 .next
 yarn.lock
 .gitignore
-.eslintignore
+.prettierignore
 .gitattributes
 coverage
 storybook-static
 .tsBuildInfoFile
+jest.config.js

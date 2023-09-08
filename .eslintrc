@@ -118,7 +118,7 @@
       "extends": ["plugin:storybook/recommended"]
     },
     {
-      "files": ["**/__tests__/**/*.tsx?", "**/?(*.)+(spec|test).tsx?"],
+      "files": ["**/__tests__/?(*.)+(spec|test).tsx?"],
       "plugins": ["jest-dom", "testing-library", "jest"],
       "extends": [
         "plugin:jest-dom/recommended",
