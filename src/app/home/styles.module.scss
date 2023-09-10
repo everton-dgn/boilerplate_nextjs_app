@@ -1,4 +1,4 @@
-@use 'theme' as T;
+@use 'src/theme' as T;
 
 .container {
   display: flex;
@@ -8,30 +8,30 @@
 }
 
 .header {
+  margin-bottom: T.$spacing-xxl;
   font-size: T.$font-size-xxxl;
   font-weight: T.$font-weight-semi-bold;
-  margin-bottom: T.$spacing-xxl;
   text-align: center;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: T.$spacing-macro;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
   flex-grow: 1;
+  gap: T.$spacing-macro;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.wrapperImages {
+.wrapper_images {
   display: flex;
   flex-wrap: wrap;
   gap: T.$spacing-xxl;
   width: 100%;
-  padding: 0 T.$spacing-sm;
   justify-content: center;
+  padding: 0 T.$spacing-sm;
 
   img {
     position: relative !important;

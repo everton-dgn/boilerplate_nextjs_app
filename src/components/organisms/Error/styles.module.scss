@@ -2,31 +2,31 @@
 
 .grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   padding: T.$spacing-sm;
 }
 
 .header {
+  margin-bottom: T.$spacing-xxl;
   font-size: T.$font-size-xxxl;
   font-weight: T.$font-weight-semi-bold;
-  margin-bottom: T.$spacing-xxl;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: T.$spacing-macro;
-  padding: 0;
+  width: 100%;
   align-items: center;
+  padding: 0;
 }
 
 .title {
-  font-weight: T.$font-weight-regular;
   font-size: T.$font-size-lg;
+  font-weight: T.$font-weight-regular;
   text-align: center;
 }

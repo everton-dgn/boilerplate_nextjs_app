@@ -1,118 +1,85 @@
-@mixin animation-open-sideBar($duration: 1s) {
-  @keyframes open-sideBar {
+@mixin animation-zoom-out($duration: 0.3s, $timing-function: linear) {
+  @keyframes zoom-out {
     0% {
-      transform: translate3d(-100%, 0, 0);
-      max-width: 28rem;
+      transform: scale(0.2);
     }
-    60% {
-      transform: translate3d(0, 0, 0);
-      max-width: 30rem;
-    }
+
     100% {
-      transform: translate3d(0, 0, 0);
-      max-width: 28rem;
-    }
-  }
-
-  animation: open-sideBar $duration forwards;
-}
-
-@mixin animation-close-sideBar($duration: 1s) {
-  @keyframes close-sideBar {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    40% {
-      transform: translate3d(0, 0, 0);
-      max-width: 31rem;
-    }
-    100% {
-      transform: translate3d(-100%, 0, 0);
-      max-width: 28rem;
-    }
-  }
-
-  animation: close-sideBar $duration forwards;
-}
-
-@mixin animation-show-options($duration: 1s) {
-  @keyframes show-options {
-    0% {
-      opacity: 0.6;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
       transform: scale(1);
     }
   }
 
-  animation: show-options $duration forwards;
+  animation: zoom-out $duration $timing-function forwards;
 }
 
-@mixin animation-hidden-options($duration: 1s) {
-  @keyframes hidden-options {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0.6;
-      transform: scale(0);
-    }
-  }
-
-  animation: hidden-options $duration forwards;
-}
-
-@mixin animation-rotate($duration: 1s) {
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  animation: rotate $duration forwards;
-}
-
-@mixin animation-rotate-partial($duration: 1s) {
-  @keyframes rotate-partial {
-    80%,
-    100% {
-      transform: rotate(45deg);
-    }
-  }
-
-  animation: rotate-partial $duration forwards;
-}
-
-@mixin animation-move-up($duration: 1s) {
+@mixin animation-move-up($duration: 0.3s, $timing-function: linear) {
   @keyframes move-up {
     0% {
-      transform: translateY(3rem);
       opacity: 0;
+      transform: translateY(3rem);
     }
+
     100% {
-      transform: translateY(0);
       opacity: 1;
+      transform: translateY(0);
     }
   }
 
-  animation: move-up $duration forwards;
+  animation: move-up $duration $timing-function forwards;
 }
 
-@mixin animation-fade-in($duration: 1s) {
+@mixin animation-fade-in($duration: 0.3s, $timing-function: linear) {
   @keyframes fade-in {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
 
-  animation: fade-in $duration forwards;
+  animation: fade-in $duration $timing-function forwards;
+}
+
+@mixin animation-bounce-delay($duration: 0.3s, $timing-function: linear) {
+  @keyframes bounce-delay {
+    0%,
+    80%,
+    100% {
+      transform: scale(0);
+    }
+
+    40% {
+      transform: scale(1);
+    }
+  }
+
+  animation: bounce-delay $duration $timing-function forwards;
+}
+
+@mixin animation-move(
+  $duration: 0.3s,
+  $timing-function: linear,
+  $x: 0,
+  $y: 0,
+  $z: 0
+) {
+  @keyframes move {
+    to {
+      transform: translate3d($x, $y, $z);
+    }
+  }
+
+  animation: move $duration $timing-function forwards;
+}
+
+@mixin animation-rotate($duration: 0.3s, $timing-function: linear infinite) {
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: rotate $duration $timing-function forwards;
 }

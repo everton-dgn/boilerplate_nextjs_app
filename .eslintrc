@@ -62,9 +62,7 @@
   ],
   "rules": {
     "@next/next/no-img-element": "off",
-    "react/jsx-sort-props": "warn",
     "object-shorthand": "warn",
-    "sort-keys-fix/sort-keys-fix": "warn",
     "typescript-sort-keys/string-enum": [
       "warn",
       "asc",
