@@ -1,2 +1,13 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {}
+const idObj = new Proxy(
+  {},
+  {
+    get: function getter(target, key) {
+      if (key === '__esModule') {
+        return false
+      }
+      return key
+    }
+  }
+)
+
+module.exports = idObj
