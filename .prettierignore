@@ -4,9 +4,10 @@ public/*
 .next
 yarn.lock
 .gitignore
-.prettierignore
+.eslintcache
 .gitattributes
 coverage
 storybook-static
 .tsBuildInfoFile
 jest.config.js
+.stylelintcache
