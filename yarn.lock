@@ -10301,11 +10301,6 @@ postcss-selector-parser@^6.0.11, postcss-selector-parser@^6.0.13, postcss-select
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-postcss-sorting@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-8.0.2.tgz#6393385ece272baf74bee9820fb1b58098e4eeca"
-  integrity sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==
-
 postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
@@ -11797,14 +11792,6 @@ stylelint-high-performance-animation@^1.9.0:
   integrity sha512-tUN8YqIRFRCsMLLI1wnyODP6+H5Lc63NEaUcOt1lqNaEEgd0tGgA4miY2JuL8eSHvgmGkmZPZTn1Dgek05O3uQ==
   dependencies:
     postcss-value-parser "^4.2.0"
-
-stylelint-order@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-6.0.3.tgz#160b78650bd90463241b992581efee7159baefc2"
-  integrity sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==
-  dependencies:
-    postcss "^8.4.21"
-    postcss-sorting "^8.0.2"
 
 stylelint-sass-render-errors@^3.1.0:
   version "3.1.0"
