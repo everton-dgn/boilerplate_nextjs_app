@@ -5,6 +5,9 @@ import './style.scss'
 
 const preview: Preview = {
   parameters: {
+    backgrounds: {
+      default: 'dark'
+    },
     viewport: {
       viewports
     },
