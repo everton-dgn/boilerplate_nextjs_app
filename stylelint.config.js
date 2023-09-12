@@ -11,6 +11,7 @@ module.exports = {
     'stylelint-high-performance-animation'
   ],
   rules: {
+    'max-nesting-depth': 2,
     'no-empty-source': null,
     'custom-property-pattern': '^([a-z][a-z0-9]*)((-|--)[a-z0-9]+)*$',
     'selector-class-pattern':
