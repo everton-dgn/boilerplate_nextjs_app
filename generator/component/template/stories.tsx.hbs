@@ -1,0 +1,13 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import {{pascalCase name}} from '..'
+
+const meta = {
+  title: '{{pascalCase component_level}}/{{pascalCase name}}',
+  component: {{pascalCase name}}
+} satisfies Meta<typeof {{pascalCase name}}>
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}

@@ -1,0 +1,10 @@
+import S from './styles.module.scss'
+import { {{pascalCase name}}Props } from './types'
+
+const {{pascalCase name}} = ({ ...props }: {{pascalCase name}}Props) => (
+  <div className={S.container} {...props}>
+    <h1>{{pascalCase name}}</h1>
+  </div>
+)
+
+export default {{pascalCase name}}

@@ -1,0 +1,10 @@
+import renderHooksProvider from 'testHelpers/providers/hooks'
+import use{{pascalCase name}} from '..'
+
+describe('[Hook] use{{pascalCase name}}', () => {
+  it('should provide an initial value', () => {
+    const { result } = renderHooksProvider(() => use{{pascalCase name}}())
+
+    expect(result.current.state).toBe(0)
+  })
+})
