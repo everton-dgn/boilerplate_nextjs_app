@@ -19,7 +19,7 @@ const actions = [
   },
   {
     type: 'add',
-    path: `${componentPath}/__tests__/{{name}}.test.tsx`,
+    path: `${componentPath}/__tests__/{{pascalCase name}}.test.tsx`,
     templateFile: `${templatePath}/test.tsx.hbs`
   },
   {
