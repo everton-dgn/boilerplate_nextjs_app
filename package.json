@@ -26,7 +26,7 @@
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "generate": "yarn plop --plopfile generator/plopFile.mjs",
-    "prepare": "husky install"
+    "prepare": "node scripts/create-husky-files.mjs && husky install"
   },
   "husky": {
     "hooks": {
