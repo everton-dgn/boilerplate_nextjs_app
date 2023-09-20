@@ -39,3 +39,4 @@ yarn-error.log*
 # linters
 .eslintcache
 .stylelintcache
+.husky/_
