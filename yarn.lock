@@ -6668,6 +6668,11 @@ eslint-plugin-react@^7.31.7, eslint-plugin-react@^7.33.2:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
+eslint-plugin-sonarjs@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.21.0.tgz#1917f4d3de0ae72495a594142f51c1576f82e2c7"
+  integrity sha512-oezUDfFT5S6j3rQheZ4DLPrbetPmMS7zHIKWGHr0CM3g5JgyZroz1FpIKa4jV83NsGpmgIeagpokWDKIJzRQmw==
+
 eslint-plugin-sort-keys-fix@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-sort-keys-fix/-/eslint-plugin-sort-keys-fix-1.1.2.tgz#00c8b5791612ec32162b8d7a0563e9c6eb27ec59"
