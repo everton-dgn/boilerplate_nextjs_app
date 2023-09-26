@@ -8,10 +8,10 @@ describe('[Hook] useCount', () => {
 
     expect(result.current.count).toBe(0)
 
-    act(() => result.current.increment())
+    await act(() => result.current.increment())
     expect(result.current.count).toBe(1)
 
-    act(() => result.current.increment())
+    await act(() => result.current.increment())
     expect(result.current.count).toBe(2)
   })
 })

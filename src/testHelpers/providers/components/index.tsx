@@ -1,5 +1,5 @@
-import { ReactNode } from 'react'
-import { render, RenderResult } from '@testing-library/react'
+import { type ReactNode } from 'react'
+import { render, type RenderResult } from '@testing-library/react'
 import MainProvider from 'providers/mainProviders'
 
 const renderWithProviders = (children: ReactNode): RenderResult =>

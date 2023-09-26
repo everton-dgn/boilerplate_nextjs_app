@@ -19,8 +19,22 @@
       }
     }
   },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "sort-keys-fix",
+    "typescript-sort-keys",
+    "sonarjs",
+    "promise",
+    "prettier",
+    "jest-dom",
+    "testing-library",
+    "jest",
+    "jsx-a11y"
+  ],
   "extends": [
-    "standard",
+    "standard-with-typescript",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -48,21 +62,17 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint",
-    "sort-keys-fix",
-    "typescript-sort-keys",
-    "sonarjs",
-    "promise",
-    "prettier",
-    "jest-dom",
-    "testing-library",
-    "jest",
-    "jsx-a11y"
-  ],
   "rules": {
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-floating-promises": [
+      "error",
+      {
+        "ignoreVoid": false
+      }
+    ],
     "@next/next/no-img-element": "off",
     "object-shorthand": "warn",
     "typescript-sort-keys/string-enum": [

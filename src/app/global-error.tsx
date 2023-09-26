@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import Error from 'components/organisms/Error'
 import poppins from 'theme/fontFamily'
-import { ErrorProps } from './types'
+import { type ErrorProps } from './types'
 
 const GlobalError = ({ error, reset }: ErrorProps) => {
   useEffect(() => {

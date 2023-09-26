@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 import Error from 'components/organisms/Error'
 import poppins from 'theme/fontFamily'
+import React from 'react'
 
 const NotFound = () => {
   const { replace } = useRouter()
@@ -25,7 +26,11 @@ const NotFound = () => {
       </head>
 
       <body className={poppins.className}>
-        <Error reset={() => replace('/')} />
+        <Error
+          reset={() => {
+            replace('/')
+          }}
+        />
       </body>
     </html>
   )

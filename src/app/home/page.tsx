@@ -13,7 +13,7 @@ const Home = () => (
       Boilerplate
     </header>
     <main className={S.main}>
-      <div className={S.wrapperImages}>
+      <div className={S.wrapper_images}>
         <Image
           alt="Logo Nextjs"
           height={77}

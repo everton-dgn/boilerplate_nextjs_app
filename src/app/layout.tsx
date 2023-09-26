@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import MainProvider from 'providers/mainProviders'
 import DefaultTemplate from 'components/templates/DefaultTemplate'
 import poppins from 'theme/fontFamily'

@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { type UseCount } from './types'
 
-const useCount = () => {
+const useCount = (): UseCount => {
   const [count, setCount] = useState(0)
-  const increment = () => setCount(count + 1)
+  const increment = (): void => {
+    setCount(count + 1)
+  }
   return { count, increment }
 }
 
