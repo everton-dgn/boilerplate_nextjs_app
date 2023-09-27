@@ -17,7 +17,7 @@
     "next:lint": "next lint",
     "format": "prettier --cache --write .",
     "check:format": "prettier --cache --check .",
-    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "typecheck": "tsc --noEmit",
     "test": "jest --maxWorkers=50%",
     "test:c": "jest --maxWorkers=50% --coverage",
     "test:w": "jest --watch --maxWorkers=25%",
