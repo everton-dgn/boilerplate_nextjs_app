@@ -15,8 +15,6 @@ fs.existsSync(HUSKY_DIR)
 const getPrePushContent = `#!/usr/bin/env sh
 . "$(dirname "$0")/common.sh"
 
-npx --no-install
-
 pnpm test
 pnpm typecheck
 pnpm build
@@ -25,7 +23,7 @@ pnpm build
 const getPreCommitContent = `#!/usr/bin/env sh
 . "$(dirname "$0")/common.sh"
 
-npx --no-install lint-staged
+pnpm lint-staged
 `
 
 const getCommonShContent = `command_exists () {
@@ -40,7 +38,7 @@ fi
 const getCommitMsgContent = `#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx --no-install commitlint --edit "$1"
+pnpm commitlint --edit "$1"
 `
 
 const files = {
