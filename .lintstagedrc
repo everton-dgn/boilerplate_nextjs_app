@@ -1,8 +1,8 @@
 {
   "src/**/*.{ts,tsx}": [
-    "yarn format",
-    "yarn lint:fix",
-    "yarn test:ci --findRelatedTests"
+    "pnpm format",
+    "pnpm lint:fix",
+    "pnpm test:ci --findRelatedTests"
   ],
   "src/**/*.scss": ["yarn lint:css:fix"]
 }
