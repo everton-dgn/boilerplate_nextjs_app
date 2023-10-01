@@ -4,5 +4,5 @@
     "pnpm lint:fix",
     "pnpm test:ci --findRelatedTests"
   ],
-  "src/**/*.scss": ["yarn lint:css:fix"]
+  "src/**/*.scss": ["pnpm lint:css:fix"]
 }
