@@ -34,6 +34,9 @@ module.exports = {
   transform: {
     '\\.(webp|png|gif|svg|jpg)$':
       '<rootDir>/src/testHelpers/mocks/assetsTransformer.js',
-    '^.+\\.tsx?$': ['babel-jest', { presets: ['next/babel'] }]
+    '^.+\\.tsx?$': [
+      '@swc/jest',
+      { jsc: { transform: { react: { runtime: 'automatic' } } } }
+    ],
   }
 }
