@@ -83,7 +83,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 - node (latest version lts).
 
-- pnpm (latest version lts).
+- yarn (latest version lts).
 
 <br />
 
@@ -100,13 +100,13 @@ git clone https://github.com/everton-dgn/boilerplate_nextjs_app.git
 ## Install Dependencies
 
 ```bash
-pnpm i
+yarn
 ```
 
 ## Start Development Environment
 
 ```bash
-pnpm dev
+yarn dev
 ```
 
 Available in http://localhost:3000
@@ -114,13 +114,13 @@ Available in http://localhost:3000
 ## Generate Production Build
 
 ```bash
-pnpm build
+yarn build
 ```
 
 ## Start Production Environment
 
 ```bash
-pnpm start
+yarn start
 ```
 
 Available in http://localhost:3000
@@ -128,13 +128,13 @@ Available in http://localhost:3000
 ## Run Tests
 
 ```bash
-pnpm test
+yarn test
 ```
 
 ## Run Tests in Watch Mode
 
 ```bash
-pnpm test:w
+yarn test:w
 ```
 
 Available in http://localhost:6006
@@ -142,31 +142,31 @@ Available in http://localhost:6006
 ## Run Lints
 
 ```bash
-pnpm lint
+yarn lint
 ```
 
 ```bash
-pnpm next:lint
+yarn next:lint
 ```
 
 ```bash
-pnpm typecheck
+yarn typecheck
 ```
 
 ```bash
-pnpm check-format
+yarn check:format
 ```
 
 ## Format code with prettier
 
 ```bash
-pnpm format
+yarn format
 ```
 
 ## Check for Available Updates for Dependencies
 
 ```bash
-pnpm check:update
+yarn check:update
 ```
 
 <br />
