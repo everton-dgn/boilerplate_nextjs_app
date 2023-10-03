@@ -1,5 +1,5 @@
 import { renderHook, type RenderHookResult } from '@testing-library/react'
-import MainProvider from 'providers/mainProviders'
+import MainProvider from 'providers/mainProvider'
 import { type RenderHooksProviderProps, type WrapperProps } from './types'
 import { type ReactNode } from 'react'
 
