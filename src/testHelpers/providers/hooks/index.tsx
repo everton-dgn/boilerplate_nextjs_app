@@ -1,7 +1,7 @@
 import { renderHook, type RenderHookResult } from '@testing-library/react'
 import MainProvider from 'providers/mainProvider'
-import { type RenderHooksProviderProps, type WrapperProps } from './types'
-import { type ReactNode } from 'react'
+import type { RenderHooksProviderProps, WrapperProps } from './types'
+import type { ReactNode } from 'react'
 
 const wrapper = ({ children }: WrapperProps): ReactNode => (
   <MainProvider>{children}</MainProvider>

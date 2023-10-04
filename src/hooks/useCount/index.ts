@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { type UseCount } from './types'
+import type { UseCount } from './types'
 
 const useCount = (): UseCount => {
   const [count, setCount] = useState(0)
