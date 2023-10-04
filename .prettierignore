@@ -1,6 +1,5 @@
 public/*
 .storybook
-.jest
 .next
 yarn.lock
 .gitignore
