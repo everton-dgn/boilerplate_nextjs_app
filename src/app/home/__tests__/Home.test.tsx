@@ -33,7 +33,7 @@ describe('[Page] Home', () => {
       name: 'COUNT: 0'
     })
     await act(async () => {
-      await event.click(countButton0)
+      await event().click(countButton0)
     })
     const countButton1 = screen.getByRole('button', {
       name: 'COUNT: 1'
@@ -42,7 +42,7 @@ describe('[Page] Home', () => {
     expect(countButton1).toBeInTheDocument()
 
     await act(async () => {
-      await event.click(countButton1)
+      await event().click(countButton1)
     })
     const countButton2 = screen.getByRole('button', {
       name: 'COUNT: 2'

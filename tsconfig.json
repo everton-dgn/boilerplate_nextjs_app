@@ -28,8 +28,9 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "types": ["vite/client", "vitest/globals"]
   },
-  "include": ["src", ".next/types/**/*.ts", "src/@types/**/*.d.ts"],
+  "include": ["src", ".next/types/**/*.ts", "src/@types/**/*.d.ts", "./vitest.setup.ts"],
   "exclude": ["node_modules", ".next"]
 }

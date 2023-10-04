@@ -4,7 +4,7 @@ import Error from '..'
 
 describe('[Component] CustomError', () => {
   it('should the following section title: Page not found!', () => {
-    renderWithProviders(<Error reset={jest.fn()} />)
+    renderWithProviders(<Error reset={vi.fn()} />)
 
     const heading = screen.getByRole('banner')
     const title = screen.getByRole('heading', {

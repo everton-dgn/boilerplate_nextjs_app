@@ -14,7 +14,7 @@ const preview: Preview = {
   ],
   parameters: {
     backgrounds: {
-      default: 'dark'
+      default: 'light'
     },
     viewport: {
       viewports

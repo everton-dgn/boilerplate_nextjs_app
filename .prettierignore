@@ -9,5 +9,4 @@ yarn.lock
 coverage
 storybook-static
 .tsBuildInfoFile
-jest.config.js
 .stylelintcache

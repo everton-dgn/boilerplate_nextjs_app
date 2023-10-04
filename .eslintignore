@@ -8,4 +8,5 @@ yarn.lock
 coverage
 .tsBuildInfoFile
 .stylelintcache
-jest.config.js
+vitest.config.ts
+vitest.setup.ts

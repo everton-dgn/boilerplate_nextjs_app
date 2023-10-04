@@ -2,7 +2,7 @@
   "src/**/*.{ts,tsx}": [
     "yarn format",
     "yarn lint:fix",
-    "yarn test:ci --findRelatedTests"
+    "yarn test:ci related"
   ],
   "src/**/*.scss": ["yarn lint:css:fix"]
 }

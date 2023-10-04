@@ -57,7 +57,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 🚩 Lints: Husky, ESlint, Stylelint, Commitlint, Lint-Staged, Prettier and Typecheck
 
-✅ Jest
+✅ Vitest
 
 🐙 React Testing Library
 

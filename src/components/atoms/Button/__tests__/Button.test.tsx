@@ -5,11 +5,11 @@ import Button from '..'
 
 describe('[Component] Button', () => {
   it('should call a function once on click on the button', async () => {
-    const onClick = jest.fn()
+    const onClick = vi.fn()
     renderWithProviders(<Button label="Mais Informações" onClick={onClick} />)
 
     const btn = screen.getByRole('button', { name: /Mais Informações/i })
-    await event.click(btn)
+    await event().click(btn)
 
     expect(onClick).toHaveBeenCalledTimes(1)
   })

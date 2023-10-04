@@ -2,8 +2,7 @@
   "env": {
     "browser": true,
     "es2022": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
   "settings": {
     "react": {
@@ -28,8 +27,8 @@
     "sonarjs",
     "promise",
     "prettier",
-    "jest-dom",
     "testing-library",
+    "jest-dom",
     "jest",
     "jsx-a11y"
   ],
@@ -50,7 +49,6 @@
     "plugin:storybook/recommended",
     "plugin:jest-dom/recommended",
     "plugin:testing-library/react",
-    "plugin:jest/recommended",
     "plugin:jest/style",
     "next/core-web-vitals"
   ],
