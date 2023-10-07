@@ -31,6 +31,6 @@
     ],
     "types": ["vite/client", "vitest/globals"]
   },
-  "include": ["src", ".next/types/**/*.ts", "src/@types/**/*.d.ts", "./vitest.setup.ts"],
+  "include": ["src", "next-env.d.ts", ".next/types/**/*.ts", "src/@types/**/*.d.ts", "./vitest.setup.ts"],
   "exclude": ["node_modules", ".next"]
 }
