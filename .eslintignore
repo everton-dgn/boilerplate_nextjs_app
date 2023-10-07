@@ -9,3 +9,6 @@ coverage
 .stylelintcache
 vitest.config.ts
 vitest.setup.ts
+next.config.js
+stylelint.config.js
+next-env.d.ts
