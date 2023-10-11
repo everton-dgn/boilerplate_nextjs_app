@@ -17,6 +17,7 @@
     "jsxImportSource": "react",
     "removeComments": true,
     "sourceMap": true,
+    "moduleDetection": "force",
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
