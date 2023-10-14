@@ -1,7 +1,7 @@
 const idObj = new Proxy(
   {},
   {
-    get: function getter(target, key) {
+    get: function getter(_target, key) {
       if (key === '__esModule') {
         return false
       }

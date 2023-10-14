@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation'
 import Error from 'components/organisms/Error'
 import poppins from 'theme/fontFamily'
-import React from 'react'
 
 const NotFound = () => {
   const { replace } = useRouter()
