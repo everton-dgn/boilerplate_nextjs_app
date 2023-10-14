@@ -34,7 +34,7 @@ yarn-error.log*
 /src/stories
 
 # typescript incremental features
-/.tsBuildInfoFile/
+tsconfig.tsbuildinfo
 
 # linters
 .eslintcache
