@@ -4,7 +4,10 @@
 
 const nextConfig = {
   images: {
-    domains: ['localhost'],
+    remotePatterns: [{
+      protocol: 'http',
+      hostname: 'localhost'
+    }],
     formats: ['image/webp'],
     loader: 'default',
     path: '/_next/image'
