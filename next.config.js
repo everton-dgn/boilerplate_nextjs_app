@@ -12,7 +12,6 @@ const nextConfig = {
     loader: 'default',
     path: '/_next/image'
   },
-  optimizeFonts: true,
   reactStrictMode: true
 }
 
