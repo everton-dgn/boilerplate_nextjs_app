@@ -12,13 +12,16 @@ const config: StorybookConfig = {
   },
   framework: {
     name: '@storybook/nextjs',
-    options: {}
+    options: {
+      builder: { useSWC: true }
+    }
   },
   docs: {
     autodocs: true
   },
   typescript: {
-    check: true
+    check: true,
+    reactDocgen: 'react-docgen'
   }
 }
 export default config
