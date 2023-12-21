@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import type { UseCount } from './types'
 
 const useCount = (): UseCount => {

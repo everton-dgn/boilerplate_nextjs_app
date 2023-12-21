@@ -28,7 +28,9 @@
     "testing-library",
     "jest-dom",
     "jest",
-    "jsx-a11y"
+    "jsx-a11y",
+    "import",
+    "eslint-plugin-import-helpers"
   ],
   "extends": [
     "standard-with-typescript",
@@ -47,6 +49,8 @@
     "plugin:jest-dom/recommended",
     "plugin:testing-library/react",
     "plugin:jest/style",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "next/core-web-vitals"
   ],
   "parser": "@typescript-eslint/parser",
@@ -58,6 +62,31 @@
     "sourceType": "module"
   },
   "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react$/", "/next/"],
+          "module",
+          "/^(providers|components)/",
+          ["/hooks/", "/helperFunctions/"],
+          ["/infra/", "/data/", "/validation/"],
+          "/^assets/",
+          "/testHelpers/",
+          "/types/",
+          ["/^theme$/", "/styles/"],
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/no-duplicates": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",

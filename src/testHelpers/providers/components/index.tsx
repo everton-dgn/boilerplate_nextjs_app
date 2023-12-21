@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
+
 import { render, type RenderResult } from '@testing-library/react'
+
 import MainProvider from 'providers/mainProvider'
 
 const renderWithProviders = (children: ReactNode): RenderResult =>

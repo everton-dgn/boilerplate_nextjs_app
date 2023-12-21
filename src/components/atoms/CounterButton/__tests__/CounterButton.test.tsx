@@ -1,6 +1,8 @@
 import { screen } from '@testing-library/react'
+
 import renderWithProviders from 'testHelpers/providers/components'
 import event from 'testHelpers/providers/helpFunctions'
+
 import CounterButton from '..'
 
 const mockIncrement = vi.fn()

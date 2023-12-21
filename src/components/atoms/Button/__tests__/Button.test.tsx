@@ -1,6 +1,8 @@
 import { screen } from '@testing-library/react'
+
 import renderWithProviders from 'testHelpers/providers/components'
 import event from 'testHelpers/providers/helpFunctions'
+
 import Button from '..'
 
 describe('[Component] Button', () => {

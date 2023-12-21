@@ -1,8 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
-import Error from 'components/organisms/Error'
+
 import poppins from 'theme/fontFamily'
+
+import Error from 'components/organisms/Error'
+
 import type { ErrorProps } from './types'
 
 const GlobalError = ({ error, reset }: ErrorProps) => {

@@ -1,5 +1,7 @@
 import { screen } from '@testing-library/react'
+
 import renderWithProviders from 'testHelpers/providers/components'
+
 import DefaultTemplate from '..'
 
 describe('[Component] DefaultTemplate', () => {

@@ -1,5 +1,7 @@
 import { act } from '@testing-library/react'
+
 import renderHooksProvider from 'testHelpers/providers/hooks'
+
 import useCount from '..'
 
 describe('[Hook] useCount', () => {

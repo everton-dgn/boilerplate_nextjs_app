@@ -1,8 +1,10 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import Error from 'components/organisms/Error'
+
 import poppins from 'theme/fontFamily'
+
+import Error from 'components/organisms/Error'
 
 const NotFound = () => {
   const { replace } = useRouter()

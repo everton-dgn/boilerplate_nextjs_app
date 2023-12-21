@@ -1,6 +1,8 @@
-import S from './styles.module.scss'
 import Button from 'components/atoms/Button'
+
 import type { ErrorProps } from './types'
+
+import S from './styles.module.scss'
 
 const Error = ({ reset }: ErrorProps) => (
   <div className={S.grid}>

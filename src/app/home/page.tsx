@@ -1,7 +1,9 @@
-import Image from 'next/image'
-import S from './styles.module.scss'
-import CounterButton from 'components/atoms/CounterButton'
 import type { Metadata } from 'next'
+import Image from 'next/image'
+
+import CounterButton from 'components/atoms/CounterButton'
+
+import S from './styles.module.scss'
 
 export const metadata: Metadata = {
   description: 'Boilerplate Nextjs + React',

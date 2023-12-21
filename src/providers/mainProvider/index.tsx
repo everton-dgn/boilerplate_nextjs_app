@@ -1,5 +1,6 @@
-import type { MainProvidersProps } from './types'
 import type { ReactNode } from 'react'
+
+import type { MainProvidersProps } from './types'
 
 const MainProvider = ({ children }: MainProvidersProps): ReactNode => {
   return <>{children}</>
