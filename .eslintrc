@@ -18,6 +18,14 @@
       }
     }
   },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "plugins": [
     "react",
     "react-hooks",
@@ -41,26 +49,16 @@
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/typescript",
+    "plugin:import/warnings",
     "plugin:@next/next/recommended",
     "plugin:sonarjs/recommended",
     "prettier",
     "plugin:prettier/recommended",
-    "plugin:storybook/recommended",
     "plugin:jest-dom/recommended",
     "plugin:testing-library/react",
     "plugin:jest/style",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "next/core-web-vitals"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
   "rules": {
     "import-helpers/order-imports": [
       "warn",
@@ -70,17 +68,16 @@
           ["/^react$/", "/next/"],
           "module",
           "/^(providers|components)/",
-          ["/hooks/", "/helperFunctions/"],
+          ["/hooks/", "/helperFunctions/", "/testHelpers/"],
           ["/infra/", "/data/", "/validation/"],
           "/^assets/",
-          "/testHelpers/",
-          "/types/",
-          ["/^theme$/", "/styles/"],
+          ["/^theme$/", "/styles/", "/@types/"],
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ],
+    "@typescript-eslint/unbound-method": "off",
     "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
     "import/named": 2,
     "import/namespace": 2,
@@ -127,13 +124,6 @@
     "prettier/prettier": "error"
   },
   "overrides": [
-    {
-      "files": ["**/storybook/stories.tsx"],
-      "rules": {
-        "storybook/hierarchy-separator": "error"
-      },
-      "extends": ["plugin:storybook/recommended"]
-    },
     {
       "files": ["**/__tests__/?(*.)+(spec|test).tsx?"],
       "plugins": ["jest-dom", "testing-library", "jest"],

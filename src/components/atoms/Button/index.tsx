@@ -1,6 +1,6 @@
-import type { ButtonProps } from './types'
-
 import S from './styles.module.scss'
+
+import type { ButtonProps } from './types'
 
 const Button = ({ label, ...props }: ButtonProps) => (
   <button className={S.button} {...props}>
