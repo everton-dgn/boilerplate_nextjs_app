@@ -11,17 +11,6 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
     passWithNoTests: true,
-    setupFiles: ['./vitest.setup.ts'],
-    root: './src',
-    exclude: [
-      'types.ts',
-      'testHelpers/**/*',
-      'src/**/global-error.tsx',
-      'src/**/not-found.tsx',
-      'src/**/layout.tsx',
-      'src/**/loading.tsx',
-      'src/**/types.ts',
-      'theme'
-    ]
+    setupFiles: ['./vitest.setup.ts']
   }
 })
