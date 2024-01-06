@@ -4,15 +4,15 @@
   display: flex;
   width: fit-content;
   height: fit-content;
-  border-radius: T.$border-radius-sm;
+  border-radius: T.$border-radius-4;
   justify-content: center;
   align-items: center;
-  padding: T.$spacing-xs T.$spacing-xxl;
+  padding: T.$spacing-8 T.$spacing-20;
   background-color: T.$color-tertiary;
   cursor: pointer;
   color: T.$color-white;
-  font-size: T.$font-size-xs;
-  font-weight: T.$font-weight-medium;
+  font-size: T.$font-size-14;
+  font-weight: T.$font-weight-500;
   transition: background-color 0.15s ease-in-out;
 
   &:hover {

@@ -69,13 +69,13 @@ textarea,
 button {
   margin: 0;
   font-family: T.$font-family;
-  font-size: T.$font-size-xs;
-  font-weight: T.$font-weight-medium;
+  font-size: T.$font-size-16;
+  font-weight: T.$font-weight-400;
 }
 
 button {
   border: 0;
-  border-radius: T.$border-radius-sm;
+  border-radius: T.$border-radius-4;
   cursor: pointer;
 }
 

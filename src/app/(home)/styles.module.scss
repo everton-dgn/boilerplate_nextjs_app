@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: T.$spacing-sm;
+  padding: T.$spacing-16;
 }
 
 .header {
-  margin-bottom: T.$spacing-xxl;
-  font-size: T.$font-size-xxxl;
-  font-weight: T.$font-weight-semi-bold;
+  margin-bottom: T.$spacing-32;
+  font-size: T.$font-size-32;
+  font-weight: T.$font-weight-600;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: T.$spacing-macro;
+  gap: T.$spacing-32;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -28,10 +28,10 @@
 .wrapper_images {
   display: flex;
   flex-wrap: wrap;
-  gap: T.$spacing-xxl;
+  gap: T.$spacing-32;
   width: 100%;
   justify-content: center;
-  padding: 0 T.$spacing-sm;
+  padding: 0 T.$spacing-8;
 
   img {
     position: relative !important;
@@ -53,6 +53,6 @@
 }
 
 .title {
-  font-weight: T.$font-weight-regular;
+  font-weight: T.$font-weight-500;
   text-align: center;
 }

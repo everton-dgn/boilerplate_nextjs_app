@@ -7,26 +7,26 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  padding: T.$spacing-sm;
+  padding: T.$spacing-8;
 }
 
 .header {
-  margin-bottom: T.$spacing-xxl;
-  font-size: T.$font-size-xxxl;
-  font-weight: T.$font-weight-semi-bold;
+  margin-bottom: T.$spacing-32;
+  font-size: T.$font-size-36;
+  font-weight: T.$font-weight-500;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: T.$spacing-macro;
+  gap: T.$spacing-8;
   width: 100%;
   align-items: center;
   padding: 0;
 }
 
 .title {
-  font-size: T.$font-size-lg;
-  font-weight: T.$font-weight-regular;
+  font-size: T.$font-size-28;
+  font-weight: T.$font-weight-500;
   text-align: center;
 }
