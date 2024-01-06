@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   padding: T.$spacing-16;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -17,9 +21,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   gap: T.$spacing-32;
-  height: 100%;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   padding: 0;

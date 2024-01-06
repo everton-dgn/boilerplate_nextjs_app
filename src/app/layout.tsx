@@ -2,8 +2,7 @@ import type { ReactNode } from 'react'
 
 import poppins from 'theme/fontFamily'
 
-import DefaultTemplate from 'components/templates/DefaultTemplate'
-import MainProvider from 'providers/mainProvider'
+import { MainProvider } from 'providers/mainProvider'
 import 'theme/reset.scss'
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
@@ -24,9 +23,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       </head>
 
       <body className={poppins.className}>
-        <MainProvider>
-          <DefaultTemplate>{children}</DefaultTemplate>
-        </MainProvider>
+        <MainProvider>{children}</MainProvider>
       </body>
     </html>
   )

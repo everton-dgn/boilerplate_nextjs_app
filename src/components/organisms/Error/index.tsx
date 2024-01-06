@@ -1,10 +1,12 @@
-import Button from 'components/atoms/Button'
+'use client'
+
+import { Button } from 'components/atoms'
 
 import S from './styles.module.scss'
 
 import type { ErrorProps } from './types'
 
-const Error = ({ reset }: ErrorProps) => (
+export const Error = ({ reset }: ErrorProps) => (
   <div className={S.grid}>
     <header className={S.header} role="banner">
       Error!
@@ -15,5 +17,3 @@ const Error = ({ reset }: ErrorProps) => (
     </main>
   </div>
 )
-
-export default Error

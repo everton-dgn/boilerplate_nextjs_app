@@ -1,14 +1,8 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 
-import CounterButton from 'components/atoms/CounterButton'
+import { CounterButton } from 'components/atoms'
 
 import S from './styles.module.scss'
-
-export const metadata: Metadata = {
-  description: 'Boilerplate Nextjs + React',
-  title: 'Home Page'
-}
 
 const Home = () => (
   <div className={S.container}>

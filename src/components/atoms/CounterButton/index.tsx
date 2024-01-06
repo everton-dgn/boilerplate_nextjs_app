@@ -1,10 +1,10 @@
 'use client'
 
-import Button from 'components/atoms/Button'
+import { useCount } from 'hooks'
 
-import useCount from 'hooks/useCount'
+import { Button } from '../Button'
 
-const CounterButton = () => {
+export const CounterButton = () => {
   const { count, increment } = useCount()
 
   return (
@@ -15,5 +15,3 @@ const CounterButton = () => {
     />
   )
 }
-
-export default CounterButton

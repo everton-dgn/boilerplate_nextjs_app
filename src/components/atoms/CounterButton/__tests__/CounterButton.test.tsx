@@ -1,14 +1,13 @@
 import { screen } from '@testing-library/react'
 
-import renderWithProviders from 'testHelpers/providers/components'
-import event from 'testHelpers/providers/helpFunctions'
+import { renderWithProviders } from 'testHelpers/providerComponent'
+import { event } from 'testHelpers/helpFunctions'
 
-import CounterButton from '..'
+import { CounterButton } from '..'
 
 const mockIncrement = vi.fn()
-vi.mock('hooks/useCount', () => ({
-  __esModule: true,
-  default: () => ({
+vi.mock('hooks', () => ({
+  useCount: () => ({
     count: 0,
     increment: mockIncrement
   })

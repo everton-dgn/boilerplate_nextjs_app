@@ -1,8 +1,8 @@
 import { act } from '@testing-library/react'
 
-import renderHooksProvider from 'testHelpers/providers/hooks'
+import { renderHooksProvider } from 'testHelpers/providerHook'
 
-import useCount from '..'
+import { useCount } from '..'
 
 describe('[Hook] useCount', () => {
   it('should increment wnhen call count', async () => {

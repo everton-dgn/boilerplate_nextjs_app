@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import CounterButton from '..'
+import { CounterButton } from '..'
 
 const meta = {
   component: CounterButton,

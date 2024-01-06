@@ -2,7 +2,7 @@ import type { Preview } from '@storybook/react'
 import viewports from './viewports'
 import '../src/theme/reset.scss'
 import './style.css'
-import MainProvider from '../src/providers/mainProvider'
+import { MainProvider } from '../src/providers/mainProvider'
 
 const preview: Preview = {
   decorators: [

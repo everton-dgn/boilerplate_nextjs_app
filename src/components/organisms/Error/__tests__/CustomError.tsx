@@ -1,8 +1,8 @@
 import { screen } from '@testing-library/react'
 
-import renderWithProviders from 'testHelpers/providers/components'
+import { renderWithProviders } from 'testHelpers/providerComponent'
 
-import Error from '..'
+import { Error } from '..'
 
 describe('[Component] CustomError', () => {
   it('should the following section title: Page not found!', () => {
