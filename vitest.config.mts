@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [tsconfigPaths(), react()],
   test: {
     deps: {
       optimizer: {
@@ -17,6 +18,8 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
     passWithNoTests: true,
-    setupFiles: ['./vitest.setup.ts']
+    setupFiles: ['./vitest.setup.ts'],
+    testTransformMode: { web: ["/\.tsx?$/"] },
+    include: ['src/**/__tests__/**/*.{ts,tsx}']
   }
 })
