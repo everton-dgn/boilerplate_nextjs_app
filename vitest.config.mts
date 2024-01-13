@@ -21,5 +21,8 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.ts'],
     testTransformMode: { web: ["/\.tsx?$/"] },
     include: ['src/**/__tests__/**/*.{ts,tsx}']
+  },
+  resolve: {
+    conditions: ['development', 'browser'],
   }
 })
