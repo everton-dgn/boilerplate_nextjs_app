@@ -5,6 +5,9 @@
     "node": true
   },
   "settings": {
+    "playwright": {
+      "additionalAssertFunctionNames": ["assertCustomCondition"]
+    },
     "react": {
       "version": "detect"
     },
