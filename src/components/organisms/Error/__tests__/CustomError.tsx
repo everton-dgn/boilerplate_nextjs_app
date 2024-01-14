@@ -1,6 +1,5 @@
 import { screen } from '@testing-library/react'
-
-import { renderWithProviders } from 'testHelpers/providerComponent'
+import { renderWithProviders } from 'tests/providerComponent'
 
 import { Error } from '..'
 

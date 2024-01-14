@@ -1,6 +1,5 @@
 import { act } from '@testing-library/react'
-
-import { renderHooksProvider } from 'testHelpers/providerHook'
+import { renderHooksProvider } from 'tests/providerHook'
 
 import { useCount } from '..'
 

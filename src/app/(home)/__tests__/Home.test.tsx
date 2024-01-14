@@ -1,7 +1,6 @@
 import { screen, act } from '@testing-library/react'
-
-import { event } from 'testHelpers/helpFunctions'
-import { renderWithProviders } from 'testHelpers/providerComponent'
+import { event } from 'tests/helpFunctions'
+import { renderWithProviders } from 'tests/providerComponent'
 
 import Home from '../page'
 

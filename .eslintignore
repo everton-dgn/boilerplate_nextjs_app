@@ -12,3 +12,5 @@ vitest.setup.ts
 next.config.js
 stylelint.config.js
 next-env.d.ts
+playwright.config.ts
+playwright-report

@@ -20,7 +20,8 @@ export default defineConfig({
     passWithNoTests: true,
     setupFiles: ['./vitest.setup.ts'],
     testTransformMode: { web: ["/\.tsx?$/"] },
-    include: ['src/**/__tests__/**/*.{ts,tsx}']
+    include: ['src/**/*.test.{ts,tsx}'],
+    exclude: ['**/node_modules/**', '**/playwright/**']
   },
   resolve: {
     conditions: ['development', 'browser'],
