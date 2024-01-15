@@ -1,9 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.describe('navigation', () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto('/')
-  })
+  test.beforeEach(async ({ page }) => await page.goto('/'))
 
   test('has title', async ({ page }) => {
     await expect(page).toHaveTitle(/Home Page/)
@@ -20,10 +18,9 @@ test.describe('navigation', () => {
     const buttonText = await page.innerText('button[aria-label="COUNT: 1"]')
     expect(buttonText).toBe('COUNT: 1')
 
-    const buttonCount = page.getByRole('button', { name: 'COUNT: 1' })
-    await buttonCount.click()
+    await page.getByRole('button', { name: 'COUNT: 1' }).click()
 
     const buttonText2 = page.getByRole('button', { name: 'COUNT: 2' })
-    expect(buttonText2).toBeDefined()
+    await expect(buttonText2).toBeVisible()
   })
 })
