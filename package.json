@@ -7,7 +7,7 @@
   "description": "This application is a boilerplate for complex and large systems, especially those that need to scale with security and code quality.",
   "repository": "https://github.com/everton-dgn/boilerplate_nextjs_app",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next --turbo",
     "start": "next start",
     "build": "next build",
     "lint": "eslint --cache src --ext ts,tsx,json --max-warnings=0",
