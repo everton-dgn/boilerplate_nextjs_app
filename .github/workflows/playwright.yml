@@ -22,10 +22,6 @@ jobs:
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
 
-    - name: Start Server
-      run: yarn dev &
-      shell: bash
-
     - name: Run Playwright tests
       run: yarn playwright test
 
