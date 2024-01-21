@@ -1,4 +1,4 @@
-@mixin animation-zoom-out($duration: 0.3s, $timing-function: linear) {
+@mixin animation-zoom-out {
   @keyframes zoom-out {
     0% {
       transform: scale(0.2);
@@ -8,11 +8,9 @@
       transform: scale(1);
     }
   }
-
-  animation: zoom-out $duration $timing-function forwards;
 }
 
-@mixin animation-move-up($duration: 0.3s, $timing-function: linear) {
+@mixin animation-move-up {
   @keyframes move-up {
     0% {
       opacity: 0;
@@ -24,11 +22,9 @@
       transform: translateY(0);
     }
   }
-
-  animation: move-up $duration $timing-function forwards;
 }
 
-@mixin animation-fade-in($duration: 0.3s, $timing-function: linear) {
+@mixin animation-fade-in {
   @keyframes fade-in {
     0% {
       opacity: 0;
@@ -38,11 +34,9 @@
       opacity: 1;
     }
   }
-
-  animation: fade-in $duration $timing-function forwards;
 }
 
-@mixin animation-bounce-delay($duration: 0.3s, $timing-function: linear) {
+@mixin animation-bounce-delay {
   @keyframes bounce-delay {
     0%,
     80%,
@@ -54,32 +48,20 @@
       transform: scale(1);
     }
   }
-
-  animation: bounce-delay $duration $timing-function forwards;
 }
 
-@mixin animation-move(
-  $duration: 0.3s,
-  $timing-function: linear,
-  $x: 0,
-  $y: 0,
-  $z: 0
-) {
+@mixin animation-move($x: 0, $y: 0, $z: 0) {
   @keyframes move {
     to {
       transform: translate3d($x, $y, $z);
     }
   }
-
-  animation: move $duration $timing-function forwards;
 }
 
-@mixin animation-rotate($duration: 0.3s, $timing-function: linear infinite) {
+@mixin animation-rotate {
   @keyframes rotate {
     to {
       transform: rotate(360deg);
     }
   }
-
-  animation: rotate $duration $timing-function forwards;
 }
