@@ -4,7 +4,10 @@ import poppins from 'theme/fontFamily'
 
 import { Error } from 'components/organisms'
 
-import type { ErrorProps } from './types'
+type ErrorProps = {
+  error: Error
+  reset: () => void
+}
 
 const GlobalError = ({ error, reset }: ErrorProps) => (
   <html lang="pt-BR">
