@@ -1,6 +1,6 @@
 // stylelint-disable-next-line scss/dollar-variable-colon-space-after
 $font-family:
-  'Poppins',
+  var(--font-poppins),
   system-ui,
   -apple-system,
   'BlinkMacSystemFont',
