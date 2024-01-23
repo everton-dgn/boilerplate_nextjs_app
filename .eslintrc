@@ -81,6 +81,7 @@
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ],
+    "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/unbound-method": "off",
     "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
