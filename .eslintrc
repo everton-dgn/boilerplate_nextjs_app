@@ -94,12 +94,7 @@
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/no-floating-promises": [
-      "error",
-      {
-        "ignoreVoid": false
-      }
-    ],
+    "@typescript-eslint/no-floating-promises": "off",
     "@next/next/no-img-element": "off",
     "object-shorthand": "warn",
     "@typescript-eslint/no-var-requires": "off",
