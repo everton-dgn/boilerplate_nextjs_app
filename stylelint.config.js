@@ -11,6 +11,7 @@ module.exports = {
     'stylelint-high-performance-animation'
   ],
   rules: {
+    'value-no-vendor-prefix': null,
     'no-descending-specificity': null,
     'declaration-block-no-duplicate-properties': true,
     'max-nesting-depth': 2,
