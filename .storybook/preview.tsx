@@ -3,13 +3,16 @@ import viewports from './viewports'
 import '../src/theme/reset.scss'
 import './style.css'
 import { MainProvider } from '../src/providers/mainProvider'
+import poppins from '../src/theme/fontFamily'
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <MainProvider>
-        <Story />
-      </MainProvider>
+      <div className={poppins.className}>
+        <MainProvider>
+          <Story />
+        </MainProvider>
+      </div>
     )
   ],
   parameters: {
