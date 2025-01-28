@@ -2,12 +2,12 @@
 
 import { useRouter } from 'next/navigation'
 
-import { Error } from 'components/organisms'
+import { ErrorFallback } from 'components/organisms/ErrorFallback'
 
 const NotFound = () => {
   const { replace } = useRouter()
 
-  return <Error reset={() => replace('/')} />
+  return <ErrorFallback reset={() => replace('/')} />
 }
 
 export default NotFound

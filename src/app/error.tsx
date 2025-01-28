@@ -2,12 +2,12 @@
 
 import { useRouter } from 'next/navigation'
 
-import { Error as ErrorComponent } from 'components/organisms'
+import { ErrorFallback } from 'components/organisms/ErrorFallback'
 
-const Error = () => {
+const ErrorPage = () => {
   const { replace } = useRouter()
 
-  return <ErrorComponent reset={() => replace('/')} />
+  return <ErrorFallback reset={() => replace('/')} />
 }
 
-export default Error
+export default ErrorPage

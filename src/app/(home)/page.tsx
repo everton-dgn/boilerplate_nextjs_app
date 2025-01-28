@@ -1,14 +1,12 @@
 import Image from 'next/image'
 
-import { CounterButton } from 'components/atoms'
+import { CounterButton } from 'components/atoms/CounterButton'
 
-import S from './styles.module.scss'
+import S from './styles.module.css'
 
 const Home = () => (
   <div className={S.container}>
-    <header className={S.header} role="banner">
-      Boilerplate
-    </header>
+    <header className={S.header}>Boilerplate</header>
     <main className={S.main}>
       <div className={S.wrapper_images}>
         <Image

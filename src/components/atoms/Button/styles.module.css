@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  border-radius: var(--radius-4);
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-8) var(--spacing-20);
+  background-color: var(--color-tertiary);
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-500);
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-tertiary-hover);
+  }
+}

@@ -1,0 +1,8 @@
+:root {
+  --shadow-xxl: 0 4px 110px -4px #26324573;
+  --shadow-xl: 0 8px 26px #1b205045;
+  --shadow-lg: 0 1px 10px -1px #97a2b473;
+  --shadow-md: 0 4px 19px -4px #97a2b48a;
+  --shadow-sm: 0 4px 19px #97a2b438;
+  --shadow-xs: 0 4px 22px -4px #97a2b438;
+}

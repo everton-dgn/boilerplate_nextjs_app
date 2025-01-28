@@ -15,7 +15,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8'
     },
-    environment: 'happy-dom',
+    environment: 'jsdom',
     globals: true,
     passWithNoTests: true,
     setupFiles: ['./vitest.setup.ts'],

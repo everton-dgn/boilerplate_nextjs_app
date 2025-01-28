@@ -2,7 +2,7 @@
 
 import poppins from 'theme/fontFamily'
 
-import { Error } from 'components/organisms'
+import { ErrorFallback } from 'components/organisms/ErrorFallback'
 
 type ErrorProps = {
   error: Error
@@ -27,7 +27,7 @@ const GlobalError = ({ error, reset }: ErrorProps) => (
     </head>
 
     <body className={poppins.className}>
-      <Error reset={reset} />
+      <ErrorFallback reset={reset} />
       <p>{error.message}</p>
     </body>
   </html>

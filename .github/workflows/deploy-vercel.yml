@@ -1,36 +1,62 @@
-name: Deploy to Vercel
+name: Production Deployment
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  LEFTHOOK: 0
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  deploy:
+  Workflow:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      #  config_actions:
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      #  setup_node:
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
 
-      - name: Install dependencies
+      #  install_dependencies:
+      - name: Install Dependencies
         run: yarn install
 
-      - name: Build
-        run: yarn build
+      #  typecheck:
+      - name: Run Typescript Check
+        run: yarn typecheck
 
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20
-        with:
-          vercel-args: '--prod'
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
+      #  lint:
+      - name: Run Lint
+        run: yarn lint
+
+      #  test_ci:
+      - name: Run Tests
+        run: yarn test:ci --reporter=verbose
+
+      #  build_deploy:
+      - name: Install Vercel CLI
+        run: yarn global add vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+
+      #  release:
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release

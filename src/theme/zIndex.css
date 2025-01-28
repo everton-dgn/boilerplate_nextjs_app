@@ -1,0 +1,9 @@
+:root {
+  --z-index-always-on-top: 5000;
+  --z-index-modal: 600;
+  --z-index-overlay: 500;
+  --z-index-header: 400;
+  --z-index-sidebar: 300;
+  --z-index-elevation: 200;
+  --z-index-base: 100;
+}
