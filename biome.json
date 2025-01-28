@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
@@ -9,7 +9,9 @@
     "lineWidth": 80,
     "attributePosition": "auto"
   },
-  "organizeImports": { "enabled": false },
+  "organizeImports": {
+    "enabled": false
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -115,7 +117,9 @@
         "useBlockStatements": "off",
         "useConsistentArrayType": {
           "level": "error",
-          "options": { "syntax": "shorthand" }
+          "options": {
+            "syntax": "shorthand"
+          }
         },
         "useConst": "error",
         "useExportType": "error",
@@ -192,10 +196,21 @@
         "src/**/__tests__/*.{ts,tsx}",
         "src/**/__tests__/*.test.{ts,tsx}"
       ],
-      "linter": { "rules": { "suspicious": { "noSkippedTests": "off" } } }
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noSkippedTests": "off"
+          }
+        }
+      }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "include": [
+        "*.ts",
+        "*.tsx",
+        "*.mts",
+        "*.cts"
+      ],
       "linter": {
         "rules": {
           "a11y": {

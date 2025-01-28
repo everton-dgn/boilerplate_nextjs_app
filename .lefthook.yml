@@ -9,7 +9,7 @@ pre-commit:
   parallel: true
   commands:
     biome:
-      glob: "*.{js,ts,jsx,tsx,css}"
+      glob: "src/**/*"
       run: yarn biome:ci {staged_files} && git update-index --again
     test:
       run: yarn test:ci {staged_files}

@@ -119,6 +119,7 @@ mark {
   }
 }
 
+/*noinspection ALL*/
 ::-webkit-scrollbar,
 scrollbar-width {
   width: 16px !important;

@@ -1,8 +1,6 @@
-/**
- * @type {import('next').NextConfig}
- */
+import type { NextConfig } from 'next'
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
     deviceSizes: [450, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     remotePatterns: [{
@@ -14,7 +12,7 @@ const nextConfig = {
     path: '/_next/image'
   },
   reactStrictMode: true,
-  poweredByHeader: false,
+  poweredByHeader: false
 }
 
-module.exports = nextConfig
+export default nextConfig
