@@ -168,7 +168,9 @@
         "useValidTypeof": "error"
       },
       "performance": {
-        "noDelete": "off"
+        "noDelete": "off",
+        "noReExportAll": "error",
+        "noBarrelFile": "error"
       }
     }
   },

@@ -123,6 +123,7 @@ mark {
 ::-webkit-scrollbar,
 scrollbar-width {
   width: 16px !important;
+
   background-color: var(--color-white);
 }
 

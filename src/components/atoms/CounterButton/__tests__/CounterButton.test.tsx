@@ -1,18 +1,18 @@
 import { screen } from '@testing-library/react'
-import { renderWithProviders } from 'tests/providers'
+import { renderWithProviders } from 'tests/providers/component'
 import { event } from 'tests/helpFunctions'
 
 import { CounterButton } from '..'
 
 const mockIncrement = vi.fn()
-vi.mock('hooks', () => ({
+vi.mock('hooks/useCount', () => ({
   useCount: () => ({
     count: 0,
     increment: mockIncrement
   })
 }))
 
-describe('[Component] Button', () => {
+describe('[Component] CounterButton', () => {
   it('should call a function once on click on the button', async () => {
     renderWithProviders(<CounterButton />)
 

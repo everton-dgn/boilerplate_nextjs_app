@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react'
-import { renderWithProviders } from 'tests/providers'
+import { renderWithProviders } from 'tests/providers/component'
 import { event } from 'tests/helpFunctions'
 
 import { Button } from '..'

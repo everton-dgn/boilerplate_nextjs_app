@@ -1,6 +1,6 @@
 'use client'
 
-import { useCount } from 'hooks'
+import { useCount } from 'hooks/useCount'
 
 import { Button } from '../Button'
 
