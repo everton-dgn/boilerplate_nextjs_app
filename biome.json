@@ -77,6 +77,8 @@
         "useRegexLiterals": "error"
       },
       "correctness": {
+        "noUnnecessaryContinue": "error",
+        "noUnusedFunctionParameters": "error",
         "noUnmatchableAnbSelector": "error",
         "noUnknownUnit": "error",
         "noUnknownProperty": "error",
@@ -193,7 +195,14 @@
         "noBarrelFile": "error"
       },
       "nursery": {
-        "useCollapsedIf": "error"
+        "useCollapsedIf": "error",
+        "noUnknownTypeSelector": "error",
+        "noUnknownPseudoElement": "error",
+        "noUnknownPseudoClass": "error",
+        "noNestedTernary": "error",
+        "noMissingVarFunction": "error",
+        "noExportedImports": "error",
+        "noEnum": "error"
       }
     }
   },
