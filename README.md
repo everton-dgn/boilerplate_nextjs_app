@@ -6,7 +6,7 @@
 
 </div>
 
-<h1 align="center">Boilerplate Complete and updated with Next.js, Typescript, SASS, Tests and more</h1>
+<h1 align="center">Boilerplate Complete and updated with Next.js, Typescript, Tests and more</h1>
 
 <br />
 
@@ -53,9 +53,9 @@ In addition to being constantly updated, this project was configured in the smal
 
 🔥 TypeScript
 
-💅 SASS
+💅 CSS Modules
 
-🚩 Lints: Husky, ESlint, Stylelint, Commitlint, Lint-Staged, Prettier and Typecheck
+🚩 Lints: Lefthook, BiomeJS, Commitlint and Typecheck
 
 ✅ Vitest
 
@@ -146,18 +146,10 @@ yarn lint
 ```
 
 ```bash
-yarn next:lint
-```
-
-```bash
 yarn typecheck
 ```
 
-```bash
-yarn check:format
-```
-
-## Format code with prettier
+## Format code with BiomeJS
 
 ```bash
 yarn format
@@ -170,14 +162,6 @@ yarn check:update
 ```
 
 <br />
-
----
-
-# :rotating_light: Important Considerations
-
-- The husky is configured to not allow commit if there are any lint and typescript errors. The push can only be done if all tests and builds (of the project and the storybook) pass.
-
-- Due to husky's build check settings, to push with git, the development server must be stopped first or an error will occur in the `git push` command.
 
 ---
 
