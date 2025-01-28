@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { renderHook, type RenderHookResult } from '@testing-library/react'
+import { type RenderHookResult, renderHook } from '@testing-library/react'
 
 import { MainProvider } from 'providers/mainProvider'
 

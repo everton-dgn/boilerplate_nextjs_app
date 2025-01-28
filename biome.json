@@ -10,7 +10,7 @@
     "attributePosition": "auto"
   },
   "organizeImports": {
-    "enabled": false
+    "enabled": true
   },
   "linter": {
     "enabled": true,
@@ -104,23 +104,20 @@
         "noGlobalEval": "error"
       },
       "style": {
+        "useThrowOnlyError": "error",
+        "useSelfClosingElements": "error",
+        "useDefaultParameterLast": "error",
         "useTemplate": "off",
         "useLiteralEnumMembers": "off",
         "noParameterAssign": "off",
-        "useDefaultParameterLast": "off",
         "noUnusedTemplateLiteral": "off",
         "noCommaOperator": "error",
         "noNamespace": "off",
-        "noNonNullAssertion": "off",
+        "noNonNullAssertion": "error",
         "noVar": "warn",
         "useAsConstAssertion": "error",
         "useBlockStatements": "off",
-        "useConsistentArrayType": {
-          "level": "error",
-          "options": {
-            "syntax": "shorthand"
-          }
-        },
+        "useConsistentArrayType": "error",
         "useConst": "error",
         "useExportType": "error",
         "useImportType": "error",
@@ -138,7 +135,7 @@
         "noCompareNegZero": "error",
         "noConfusingLabels": "error",
         "noConfusingVoidType": "error",
-        "noConsoleLog": "off",
+        "noConsoleLog": "error",
         "noControlCharactersInRegex": "error",
         "noDebugger": "error",
         "noDoubleEquals": "error",
@@ -165,6 +162,11 @@
         "noUnsafeNegation": "error",
         "useDefaultSwitchClauseLast": "error",
         "useGetterReturn": "error",
+        "noConstEnum": "error",
+        "noDuplicateAtImportRules": "error",
+        "noEmptyBlock": "error",
+        "noImportantInKeyframe": "error",
+        "noSuspiciousSemicolonInJsx": "error",
         "useValidTypeof": "error"
       },
       "performance": {

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { render, type RenderResult } from '@testing-library/react'
+import { type RenderResult, render } from '@testing-library/react'
 
 import { MainProvider } from 'providers/mainProvider'
 
