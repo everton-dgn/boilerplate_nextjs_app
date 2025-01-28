@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
@@ -47,9 +47,18 @@
         "useValidAriaValues": "error"
       },
       "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {
+            "maxAllowedComplexity": 10
+          }
+        },
+        "useFlatMap": "error",
+        "noUselessUndefinedInitialization": "error",
+        "noUselessLabel": "error",
+        "noUselessFragments": "error",
         "noForEach": "off",
         "noBannedTypes": "error",
-        "noExcessiveCognitiveComplexity": "off",
         "noExtraBooleanCast": "error",
         "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noStaticOnlyClass": "error",
@@ -68,6 +77,12 @@
         "useRegexLiterals": "error"
       },
       "correctness": {
+        "noUnmatchableAnbSelector": "error",
+        "noUnknownUnit": "error",
+        "noUnknownProperty": "error",
+        "noUnknownMediaFeatureName": "error",
+        "noUnknownFunction": "error",
+        "noUnusedImports": "error",
         "noChildrenProp": "error",
         "noConstAssign": "error",
         "noConstantCondition": "error",
@@ -126,6 +141,9 @@
         "useWhile": "error"
       },
       "suspicious": {
+        "useNamespaceKeyword": "error",
+        "useIsArray": "error",
+        "useErrorMessage": "error",
         "noArrayIndexKey": "off",
         "noAssignInExpressions": "error",
         "noAsyncPromiseExecutor": "error",
@@ -173,16 +191,27 @@
         "noDelete": "off",
         "noReExportAll": "error",
         "noBarrelFile": "error"
+      },
+      "nursery": {
+        "useCollapsedIf": "error"
       }
     }
   },
   "css": {
+    "linter": {
+      "enabled": true
+    },
+    "parser": {
+      "cssModules": true
+    },
     "formatter": {
+      "enabled": true,
       "quoteStyle": "single"
     }
   },
   "javascript": {
     "formatter": {
+      "enabled": true,
       "jsxQuoteStyle": "double",
       "quoteProperties": "asNeeded",
       "trailingCommas": "none",
@@ -201,6 +230,7 @@
         "src/**/__tests__/*.test.{ts,tsx}"
       ],
       "linter": {
+        "enabled": true,
         "rules": {
           "suspicious": {
             "noSkippedTests": "off"
@@ -209,13 +239,9 @@
       }
     },
     {
-      "include": [
-        "*.ts",
-        "*.tsx",
-        "*.mts",
-        "*.cts"
-      ],
+      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
       "linter": {
+        "enabled": true,
         "rules": {
           "a11y": {
             "noLabelWithoutControl": "off",
