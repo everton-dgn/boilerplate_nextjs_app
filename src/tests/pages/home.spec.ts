@@ -8,7 +8,7 @@ test.describe('navigation', () => {
   })
 
   test('has header', async ({ page }) => {
-    const header = page.locator('header[role="banner"]')
+    const header = page.locator('header')
     await expect(header).toHaveText('Boilerplate')
   })
 
