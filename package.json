@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "start": "next start",
-    "build": "next build",
+    "build": "next build --no-lint",
     "lint": "biome check ./src",
     "format": "biome check --write ./src",
     "biome:ci": "biome ci ./src --no-errors-on-unmatched --files-ignore-unknown=true",
