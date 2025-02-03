@@ -4,6 +4,8 @@ import { CounterButton } from 'components/atoms/CounterButton'
 
 import S from './styles.module.css'
 
+import LogoReact from 'assets/logo-react.svg'
+
 const Home = () => (
   <div className={S.container}>
     <header className={S.header}>Boilerplate</header>
@@ -16,6 +18,7 @@ const Home = () => (
           src="/images/logo-nextjs.webp"
           width={77}
         />
+        <LogoReact data-testid="logo-react" />
       </div>
       <h1 className={S.title}>Nextjs + React</h1>
       <CounterButton />
