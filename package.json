@@ -28,6 +28,15 @@
   "engines": {
     "node": ">=22"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "@swc/core",
+      "esbuild",
+      "lefthook",
+      "sharp"
+    ]
+  },
   "dependencies": {
     "clsx": "2.1.1",
     "next": "15.1.6",
