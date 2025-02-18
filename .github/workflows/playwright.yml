@@ -16,21 +16,29 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # add pnpm
+      - name: Config pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.4.1
+          run_install: false
+
       #  setup_node:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: 'pnpm'
 
       #  install_dependencies:
       - name: Install Dependencies
-        run: yarn install
+        run: pnpm install --frozen-lockfile
 
       - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
+        run: pnpm playwright install --with-deps
 
       - name: Run Playwright tests
-        run: yarn playwright test
+        run: pnpm playwright test
 
       - uses: actions/upload-artifact@v4
         if: always()
