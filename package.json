@@ -22,8 +22,9 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:codegen": "playwright codegen http://localhost:3000",
-    "check:update": "yarn upgrade-interactive --latest",
-    "postinstall": "npx lefthook install"
+    "check:update": "pnpm update --interactive --latest",
+    "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
+    "postinstall": "pnpx lefthook install"
   },
   "engines": {
     "node": ">=22"
