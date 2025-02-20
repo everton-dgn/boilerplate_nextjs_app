@@ -57,7 +57,7 @@ export default defineConfig({
     // }
   ],
   webServer: {
-    command: 'yarn dev',
+    command: 'pnpm dev',
     url: process.env.BASE_URL_TEST,
     reuseExistingServer: !process.env.CI,
   }
