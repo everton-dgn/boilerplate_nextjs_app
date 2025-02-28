@@ -55,7 +55,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 💅 CSS Modules
 
-🚩 Lints: Lefthook, BiomeJS, Commitlint and Typecheck
+🚩 Lints: Lefthook, BiomeJS and Commitlint
 
 ✅ Vitest
 
