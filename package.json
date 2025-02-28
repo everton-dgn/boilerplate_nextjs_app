@@ -27,6 +27,9 @@
     "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
     "postinstall": "pnpx lefthook install"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
