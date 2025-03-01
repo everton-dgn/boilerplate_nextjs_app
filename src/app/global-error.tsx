@@ -10,7 +10,7 @@ type ErrorProps = {
 }
 
 const GlobalError = ({ error, reset }: ErrorProps) => (
-  <html lang="pt-BR">
+  <html lang="en">
     <head>
       <meta
         name="viewport"

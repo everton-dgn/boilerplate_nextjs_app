@@ -6,7 +6,7 @@ import { MainProvider } from 'providers/mainProvider'
 import 'theme/reset.css'
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
-  <html lang="pt-BR">
+  <html lang="en">
     <head>
       <meta
         name="viewport"
