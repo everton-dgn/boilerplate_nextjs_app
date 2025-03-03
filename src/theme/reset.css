@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: var(--font-poppins);
+  font-family: var(--font-inter);
   line-height: calc(1em + 0.5rem);
   text-decoration: none;
   -webkit-font-smoothing: antialiased !important;
@@ -37,12 +37,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-image: linear-gradient(
-    45deg,
-    var(--color-black),
-    var(--color-secondary),
-    var(--color-primary)
-  );
+  background: radial-gradient(var(--color-primary), var(--color-secondary));
   color: var(--color-white);
   isolation: isolate;
 }
@@ -70,7 +65,7 @@ select,
 textarea,
 button {
   margin: 0;
-  font-family: var(--font-poppins);
+  font-family: var(--font-inter);
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-400);
 }

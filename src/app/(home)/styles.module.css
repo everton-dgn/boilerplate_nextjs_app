@@ -10,16 +10,18 @@
 }
 
 .header {
-  margin-bottom: var(--spacing-32);
-  font-size: var(--font-size-32);
+  margin-bottom: var(--spacing-40);
+  font-size: var(--font-size-36);
   font-weight: var(--font-weight-600);
   text-align: center;
+  text-shadow: 0 4px 13px var(--color-text-shadow);
+  letter-spacing: 1px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-32);
+  gap: var(--spacing-16);
   height: fit-content;
   justify-content: center;
   align-items: center;
@@ -54,6 +56,10 @@
 }
 
 .title {
+  margin-bottom: var(--spacing-16);
   font-weight: var(--font-weight-500);
   text-align: center;
+  color: var(--color-blue-light);
+  text-shadow: 0 4px 13px var(--color-text-shadow);
+  letter-spacing: 1px;
 }

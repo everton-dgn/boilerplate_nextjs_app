@@ -1,6 +1,6 @@
 'use client'
 
-import poppins from 'theme/fontFamily'
+import inter from 'theme/fontFamily'
 
 import { ErrorFallback } from 'components/organisms/ErrorFallback'
 
@@ -26,7 +26,7 @@ const GlobalError = ({ error, reset }: ErrorProps) => (
       <title>Error Page</title>
     </head>
 
-    <body className={poppins.className}>
+    <body className={inter.className}>
       <ErrorFallback reset={reset} />
       <p>{error.message}</p>
     </body>

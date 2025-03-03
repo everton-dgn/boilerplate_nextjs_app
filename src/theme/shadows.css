@@ -1,8 +1,8 @@
 :root {
-  --shadow-xxl: 0 4px 110px -4px #26324573;
-  --shadow-xl: 0 8px 26px #1b205045;
-  --shadow-lg: 0 1px 10px -1px #97a2b473;
-  --shadow-md: 0 4px 19px -4px #97a2b48a;
-  --shadow-sm: 0 4px 19px #97a2b438;
-  --shadow-xs: 0 4px 22px -4px #97a2b438;
+  --shadow-xxl: 0 4px 110px -4px oklch(0.315 0.038 259.416 / 0.45);
+  --shadow-xl: 0 8px 26px oklch(0.27 0.087 274.502 / 0.27);
+  --shadow-lg: 0 1px 10px -1px oklch(0.709 0.029 260.301 / 0.45);
+  --shadow-md: 0 4px 19px -4px oklch(0.709 0.029 260.301 / 0.54);
+  --shadow-sm: 0 4px 19px oklch(0.709 0.029 260.301 / 0.22);
+  --shadow-xs: 0 4px 22px -4px oklch(0.709 0.029 260.301 / 0.22);
 }

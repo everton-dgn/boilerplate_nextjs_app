@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import poppins from 'theme/fontFamily'
+import inter from 'theme/fontFamily'
 
 import { MainProvider } from 'providers/mainProvider'
 import 'theme/reset.css'
@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
       <link href="/favicon.png" rel="apple-touch-icon" />
     </head>
 
-    <body className={poppins.className}>
+    <body className={inter.className}>
       <MainProvider>{children}</MainProvider>
     </body>
   </html>
