@@ -9,11 +9,9 @@ pre-commit:
   parallel: false
   commands:
     format:
-      glob: "src/**/*"
       run: pnpm format {staged_files} && git update-index --again
     lint:
-      glob: "src/**/*"
-      run: pnpm biome:ci {staged_files} && git update-index --again
+      run: pnpm lint {staged_files}
     test:
       run: pnpm test:ci {staged_files}
     typecheck:
