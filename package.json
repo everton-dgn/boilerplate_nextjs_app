@@ -28,7 +28,7 @@
     "postinstall": "if [ -d .git ]; then pnpx lefthook install; fi"
   },
   "engines": {
-    "node": ">=24"
+    "node": ">=22"
   },
   "dependencies": {
     "clsx": "2.1.1",
