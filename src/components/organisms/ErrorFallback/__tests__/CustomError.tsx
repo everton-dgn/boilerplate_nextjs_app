@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react'
+
 import { renderWithProviders } from 'tests/providers/component'
 
 import { ErrorFallback } from '..'

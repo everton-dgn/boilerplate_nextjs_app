@@ -25,21 +25,11 @@
     "check:update": "pnpm update --interactive --latest",
     "update:pnpm": "corepack use pnpm@latest",
     "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
-    "postinstall": "pnpx lefthook install"
+    "postinstall": "if [ -d .git ]; then pnpx lefthook install; fi"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "@swc/core",
-      "esbuild",
-      "lefthook",
-      "sharp"
-    ]
-  },
-  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
   "dependencies": {
     "clsx": "2.1.1",
     "next": "15.3.0",
@@ -47,7 +37,7 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.6",
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@playwright/test": "1.51.1",
@@ -81,5 +71,6 @@
     "vite": "6.2.5",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.1.1"
-  }
+  },
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
 }
