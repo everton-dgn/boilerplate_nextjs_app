@@ -2,8 +2,9 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   experimental: {
-    turbopackFileSystemCacheForDev: true,
+    turbopackFileSystemCacheForDev: true
   },
+  reactCompiler: true,
   turbopack: {
     rules: {
       '*.svg': {
