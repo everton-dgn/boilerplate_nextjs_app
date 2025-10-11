@@ -103,6 +103,7 @@
         "useValidAriaValues": "error"
       },
       "complexity": {
+        "noImportantStyles": "off",
         "noExcessiveCognitiveComplexity": {
           "level": "error",
           "options": {
