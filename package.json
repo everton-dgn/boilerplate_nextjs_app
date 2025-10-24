@@ -27,6 +27,7 @@
     "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
     "postinstall": "if [ -d .git ]; then pnpx lefthook install; fi"
   },
+  "type": "module",
   "engines": {
     "node": ">=22"
   },
