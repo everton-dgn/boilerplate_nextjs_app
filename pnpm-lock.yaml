@@ -90,9 +90,6 @@ importers:
       cssnano:
         specifier: 7.1.1
         version: 7.1.1(postcss@8.5.6)
-      dotenv:
-        specifier: 17.2.3
-        version: 17.2.3
       jsdom:
         specifier: 27.0.1
         version: 27.0.1(postcss@8.5.6)
@@ -2433,10 +2430,6 @@ packages:
   dot-prop@5.3.0:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
-
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
-    engines: {node: '>=12'}
 
   duplexer2@0.1.4:
     resolution: {integrity: sha512-asLFVfWWtJ90ZyOUHMqk7/S2w2guQKxUI2itj3d92ADHhxUSbCMGi1f1cBcJ7xM1To+pE/Khbwo1yuNbMEPKeA==}
@@ -6839,8 +6832,6 @@ snapshots:
   dot-prop@5.3.0:
     dependencies:
       is-obj: 2.0.0
-
-  dotenv@17.2.3: {}
 
   duplexer2@0.1.4:
     dependencies:

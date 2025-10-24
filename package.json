@@ -61,7 +61,6 @@
     "autoprefixer": "10.4.21",
     "babel-plugin-react-compiler": "1.0.0",
     "cssnano": "7.1.1",
-    "dotenv": "17.2.3",
     "jsdom": "27.0.1",
     "jsdom-global": "3.0.2",
     "lefthook": "2.0.0",

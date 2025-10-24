@@ -1,7 +1,8 @@
-import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv'
+import { loadEnvFile } from 'node:process'
 
-dotenv.config({ path: '.env.test' })
+import { defineConfig, devices } from '@playwright/test'
+
+loadEnvFile('.env.test')
 
 export default defineConfig({
   testDir: './src/tests',
