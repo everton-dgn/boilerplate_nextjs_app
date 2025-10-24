@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es2022",
+    "target": "ES2024",
     "allowJs": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": [
       "dom",
       "dom.iterable",
-      "ESNext"
+      "ESNEXT"
     ],
-    "module": "ESNext",
+    "module": "ESNEXT",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "strict": true,
@@ -47,10 +47,10 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "next-env.d.ts",
+    ".next/dev/types/**/*.ts",
     ".next/types/**/*.ts",
     "src/@types/**/*.d.ts",
-    "./vitest.setup.ts",
-    ".next/dev/types/**/*.ts"
+    "./vitest.setup.ts"
   ],
   "exclude": [
     "node_modules",

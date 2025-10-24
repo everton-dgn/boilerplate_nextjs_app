@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true
   },
-  reactCompiler: true,
   turbopack: {
     rules: {
       '*.svg': {
@@ -25,7 +24,10 @@ const nextConfig: NextConfig = {
     loader: 'default',
     path: '/_next/image'
   },
+  typedRoutes: true,
+  reactCompiler: true,
   reactStrictMode: true,
+  cacheComponents: false,
   poweredByHeader: false
 }
 
