@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@types/*": ["src/@types/*"],
+      "app/*": ["src/app/*"],
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "hooks/*": ["src/hooks/*"],
+      "tests/*": ["src/tests/*"],
+      "theme/*": ["src/theme/*"]
+    },
     "target": "ES2024",
     "allowJs": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "ESNEXT"
-    ],
+    "lib": ["dom", "dom.iterable", "ESNEXT"],
     "module": "ESNEXT",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -33,16 +38,8 @@
     "declaration": true,
     "skipLibCheck": true,
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "types": [
-      "node",
-      "vite/client",
-      "vitest/globals"
-    ]
+    "plugins": [{ "name": "next" }],
+    "types": ["node", "vite/client", "vitest/globals"]
   },
   "include": [
     "src/**/*.ts",
@@ -53,8 +50,5 @@
     "src/@types/**/*.d.ts",
     "./vitest.setup.ts"
   ],
-  "exclude": [
-    "node_modules",
-    ".next"
-  ]
+  "exclude": ["node_modules", ".next"]
 }

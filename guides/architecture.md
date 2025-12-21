@@ -45,7 +45,8 @@ export function Header() {
 
 ## Imports and module resolution
 
-- `baseUrl` is `src`, so prefer absolute imports like `components/Button`.
+- `tsconfig.json` maps `src` folders via `paths`, so prefer absolute imports
+  like `components/Button`.
 - Keep import casing exact; CI runs on Linux and is case-sensitive.
 
 ## Next.js features enabled

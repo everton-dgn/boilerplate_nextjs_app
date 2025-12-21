@@ -51,7 +51,7 @@ import blocks when you run `pnpm format`. The order is configured in
 - Next.js (`next`, `next/**`)
 - React
 - npm packages (`npm:*`, `vitest/*`)
-- Aliased modules from `src` (baseUrl)
+- Aliased modules from `src` (tsconfig paths)
 - Package protocol imports
 - Testing library
 - `assets/**`
@@ -64,7 +64,7 @@ import blocks when you run `pnpm format`. The order is configured in
 - Relative path imports (`./*` and deeper)
 
 This means you should prefer absolute imports from `src` (enabled by
-`baseUrl: "src"` in `tsconfig.json`). Example:
+`baseUrl: "."` and `paths` in `tsconfig.json`). Example:
 
 ```ts
 import Button from 'components/Button'
