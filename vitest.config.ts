@@ -5,6 +5,12 @@ import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+    conditions: ['development', 'browser']
+  },
   plugins: [react()],
   test: {
     deps: {
@@ -36,11 +42,5 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.ts'],
     include: ['src/**/test.{ts,tsx}'],
     exclude: ['**/node_modules/**', '**/playwright/**']
-  },
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-    conditions: ['development', 'browser']
   }
 })
