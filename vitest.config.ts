@@ -1,6 +1,8 @@
-import { defineConfig } from 'vitest/config'
-import react from '@vitejs/plugin-react-swc'
 import { fileURLToPath, URL } from 'node:url'
+
+import { defineConfig } from 'vitest/config'
+
+import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
@@ -25,7 +27,7 @@ export default defineConfig({
         '**/src/**/page.tsx',
         '**/src/**/loading.tsx',
         '**/src/**/types.ts',
-        '**/src/@types/**',
+        '**/src/@types/**'
       ]
     },
     environment: 'jsdom',
@@ -37,7 +39,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
     conditions: ['development', 'browser']
   }

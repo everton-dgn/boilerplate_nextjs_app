@@ -42,8 +42,8 @@ export default defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' }
+    }
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 7'] },
@@ -60,6 +60,6 @@ export default defineConfig({
   webServer: {
     command: 'pnpm dev',
     url: process.env.BASE_URL_TEST,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env.CI
   }
-});
+})

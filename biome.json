@@ -3,12 +3,15 @@
   "files": {
     "includes": [
       "src/**",
+      ".commitlintrc",
       "README.md",
       "next.config.ts",
       "postcss.config.js",
       "playwright.config.ts",
       "tsconfig.json",
-      "vitest.config.ts"
+      "vitest.config.ts",
+      "vitest.setup.ts",
+      "vercel.json"
     ]
   },
   "formatter": {

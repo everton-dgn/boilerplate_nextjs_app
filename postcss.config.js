@@ -8,9 +8,9 @@ export default {
       stage: 3,
       autoprefixer: {},
       features: {
-        'custom-properties': true,
-      },
+        'custom-properties': true
+      }
     },
-    ...(IS_PRODUCTION ? { cssnano: {} } : {}),
-  },
+    ...(IS_PRODUCTION ? { cssnano: {} } : {})
+  }
 }
