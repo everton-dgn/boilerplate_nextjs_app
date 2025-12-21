@@ -39,6 +39,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     passWithNoTests: true,
+    clearMocks: true,
     setupFiles: ['./vitest.setup.ts'],
     include: ['src/**/test.{ts,tsx}'],
     exclude: ['**/node_modules/**', '**/playwright/**']
