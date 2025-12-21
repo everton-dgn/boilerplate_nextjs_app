@@ -40,7 +40,7 @@ In addition to being constantly updated, this project was configured in the smal
   - [Run Lints](#run-lints)
   - [Format code with BiomeJS](#format-code-with-biomejs)
   - [Check for Available Updates for Dependencies](#check-for-available-updates-for-dependencies)
-- [Documentation](#books-documentation)
+- [Guides](#books-guides)
 - [Important Considerations](#rotating_light-important-considerations)
 - [References](#link-references)
 - [Author](#technologist-author)
@@ -167,13 +167,13 @@ pnpm check:update
 
 ---
 
-# :books: Documentation
+# :books: Guides
 
-- [Quick start](./docs/guia-rapido.md)
-- [Quality and restrictions](./docs/qualidade.md)
-- [Architecture](./docs/arquitetura.md)
-- [Workflows](./docs/workflows.md)
-- [FAQ](./docs/faq.md)
+- [Quick start](./guides/quick-start.md)
+- [Quality constraints](./guides/quality-constraints.md)
+- [Architecture](./guides/architecture.md)
+- [Workflows](./guides/workflows.md)
+- [FAQ](./guides/faq.md)
 
 <br />
 
@@ -181,7 +181,7 @@ pnpm check:update
 
 # :rotating_light: Important Considerations
 
-- This boilerplate enforces a strict quality bar. Read `docs/qualidade.md` before starting.
+- This boilerplate enforces a strict quality bar. Read `guides/quality-constraints.md` before starting.
 - Commits must follow Conventional Commits for the automated release flow.
 - Use Node and pnpm versions defined in `package.json`.
 
