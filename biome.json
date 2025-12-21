@@ -5,10 +5,10 @@
       "src/**",
       "README.md",
       "next.config.ts",
-      "postcss.config.cjs",
+      "postcss.config.js",
       "playwright.config.ts",
       "tsconfig.json",
-      "vitest.config.mts"
+      "vitest.config.ts"
     ]
   },
   "formatter": {
