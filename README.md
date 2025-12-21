@@ -38,9 +38,11 @@ In addition to being constantly updated, this project was configured in the smal
   - [Run Tests](#run-tests)
   - [Run Tests in Watch Mode](#run-tests-in-watch-mode)
   - [Run Lints](#run-lints)
-  - [Format code with prettier](#format-code-with-prettier)
+  - [Format code with BiomeJS](#format-code-with-biomejs)
   - [Check for Available Updates for Dependencies](#check-for-available-updates-for-dependencies)
+- [Documentation](#books-documentation)
 - [Important Considerations](#rotating_light-important-considerations)
+- [References](#link-references)
 - [Author](#technologist-author)
 
 <br />
@@ -160,6 +162,44 @@ pnpm format
 ```bash
 pnpm check:update
 ```
+
+<br />
+
+---
+
+# :books: Documentation
+
+- [Quick start](./docs/guia-rapido.md)
+- [Quality and restrictions](./docs/qualidade.md)
+- [Architecture](./docs/arquitetura.md)
+- [Workflows](./docs/workflows.md)
+- [FAQ](./docs/faq.md)
+
+<br />
+
+---
+
+# :rotating_light: Important Considerations
+
+- This boilerplate enforces a strict quality bar. Read `docs/qualidade.md` before starting.
+- Commits must follow Conventional Commits for the automated release flow.
+- Use Node and pnpm versions defined in `package.json`.
+
+<br />
+
+---
+
+# :link: References
+
+- Next.js: https://nextjs.org/docs
+- React: https://react.dev
+- Biome: https://biomejs.dev
+- Commitlint: https://commitlint.js.org
+- Lefthook: https://github.com/evilmartians/lefthook
+- Semantic-release: https://semantic-release.gitbook.io
+- Vitest: https://vitest.dev
+- Playwright: https://playwright.dev
+- TypeScript: https://www.typescriptlang.org/docs
 
 <br />
 
