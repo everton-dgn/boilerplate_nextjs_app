@@ -174,6 +174,7 @@ pnpm check:update
 - [Architecture](./guides/architecture.md)
 - [Workflows](./guides/workflows.md)
 - [FAQ](./guides/faq.md)
+- [Troubleshooting by platform](./guides/troubleshooting-platforms.md)
 
 <br />
 

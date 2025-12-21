@@ -34,6 +34,13 @@ applied locally and in CI.
   - Do not edit version numbers manually.
   - Requires `GITHUB_TOKEN` and `NPM_TOKEN` in CI.
 
+## Bypassing hooks (emergency only)
+
+- Use `git commit --no-verify` or `LEFTHOOK=0` only when you understand what
+  you're skipping.
+- Always run `pnpm format`, `pnpm lint`, `pnpm typecheck`, and `pnpm test`
+  before pushing.
+
 ## Import ordering
 
 Biome organizes imports and inserts blank lines between groups. It will rewrite
@@ -62,6 +69,13 @@ This means you should prefer absolute imports from `src` (enabled by
 ```ts
 import Button from 'components/Button'
 ```
+
+## Common failure patterns
+
+- Import order or unused imports: run `pnpm format`.
+- Line endings: the repo expects LF; CRLF can trigger Biome changes.
+- Case-sensitive paths: CI runs on Linux, so import casing must match files.
+- Disallowed patterns: no `enum`, no barrel files, no re-export-all.
 
 ## Change the Node version
 

@@ -12,6 +12,15 @@ This boilerplate uses Next.js App Router and Atomic Design.
 - `src/tests`: test helpers and Playwright E2E tests.
 - `src/@types`: global types and additional definitions.
 
+## App Router basics
+
+- Every folder under `src/app` is a route segment.
+- `page.tsx` defines a route, `layout.tsx` wraps segments, and `loading.tsx`
+  provides the suspense fallback.
+- `error.tsx`, `global-error.tsx`, and `not-found.tsx` are reserved route files.
+- Parentheses in folder names are route groups and do not affect the URL
+  (example: `(home)`).
+
 ## Atomic Design (summary)
 
 - atoms: basic elements with no complex composition.
@@ -30,9 +39,14 @@ SVGs placed in `src/assets` can be imported as React components:
 import Logo from 'assets/logo.svg'
 
 export function Header() {
-  return <Logo aria-label="Company logo" />
+  return <Logo />
 }
 ```
+
+## Imports and module resolution
+
+- `baseUrl` is `src`, so prefer absolute imports like `components/Button`.
+- Keep import casing exact; CI runs on Linux and is case-sensitive.
 
 ## Next.js features enabled
 

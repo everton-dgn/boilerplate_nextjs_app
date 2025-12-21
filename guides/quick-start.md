@@ -12,6 +12,16 @@ corepack enable
 corepack prepare pnpm@latest --activate
 ```
 
+If `pnpm i` fails with an engine error, your Node or pnpm version is out of
+range.
+
+## Verify versions
+
+```bash
+node -v
+pnpm -v
+```
+
 ## Install
 
 ```bash
@@ -39,9 +49,15 @@ pnpm typecheck
 pnpm test
 ```
 
+## First-time issues
+
+- `pnpm i` fails with "Unsupported engine": install Node 22+ and re-run
+  `corepack prepare`.
+
 ## Next steps
 
 - Quality constraints: `guides/quality-constraints.md`
 - Architecture: `guides/architecture.md`
 - Workflows: `guides/workflows.md`
 - FAQ: `guides/faq.md`
+- Troubleshooting by platform: `guides/troubleshooting-platforms.md`

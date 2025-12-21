@@ -26,6 +26,14 @@ pnpm test:e2e:ui
 pnpm test:e2e:codegen
 ```
 
+## End-to-end tests (Playwright)
+
+- `pnpm test:e2e` starts a dev server automatically using `BASE_URL_TEST` from
+  `.env.test` (default is `http://localhost:3000`).
+- The config uses Chrome via `channel: 'chrome'`, so Google Chrome must be
+  installed locally.
+- If port 3000 is busy, update `BASE_URL_TEST` and rerun the test.
+
 ## Duplicate detection
 
 ```bash
