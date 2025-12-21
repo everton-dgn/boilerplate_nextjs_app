@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
-import LogoReact from 'assets/logo-react.svg'
-
-import { CounterButton } from 'components/atoms/CounterButton'
+import LogoReact from '@/assets/logo-react.svg'
+import { CounterButton } from '@/components/atoms/CounterButton'
 
 import S from './styles.module.css'
 

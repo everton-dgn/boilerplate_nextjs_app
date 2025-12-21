@@ -2,13 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@types/*": ["src/@types/*"],
-      "app/*": ["src/app/*"],
-      "assets/*": ["src/assets/*"],
-      "components/*": ["src/components/*"],
-      "hooks/*": ["src/hooks/*"],
-      "tests/*": ["src/tests/*"],
-      "theme/*": ["src/theme/*"]
+      "@/*": ["src/*"]
     },
     "target": "ES2024",
     "allowJs": true,

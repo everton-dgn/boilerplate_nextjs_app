@@ -1,6 +1,6 @@
-import { screen } from '@testing-library/react'
+import { renderWithProviders } from '@/tests/providers/component'
 
-import { renderWithProviders } from 'tests/providers/component'
+import { screen } from '@testing-library/react'
 
 import { ErrorFallback } from '..'
 

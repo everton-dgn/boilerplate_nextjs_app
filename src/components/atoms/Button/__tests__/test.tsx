@@ -1,7 +1,7 @@
-import { screen } from '@testing-library/react'
+import { event } from '@/tests/helpFunctions'
+import { renderWithProviders } from '@/tests/providers/component'
 
-import { event } from 'tests/helpFunctions'
-import { renderWithProviders } from 'tests/providers/component'
+import { screen } from '@testing-library/react'
 
 import { Button } from '..'
 

@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 
-import { ErrorFallback } from 'components/organisms/ErrorFallback'
+import { ErrorFallback } from '@/components/organisms/ErrorFallback'
 
 const ErrorPage = () => {
   const { replace } = useRouter()

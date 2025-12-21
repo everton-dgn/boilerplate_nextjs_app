@@ -67,7 +67,7 @@ This means you should prefer absolute imports from `src` (enabled by
 `baseUrl: "."` and `paths` in `tsconfig.json`). Example:
 
 ```ts
-import Button from 'components/Button'
+import Button from '@/components/Button'
 ```
 
 ## Common failure patterns
