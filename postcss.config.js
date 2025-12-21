@@ -1,7 +1,7 @@
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 
 /** @type {import('postcss-load-config').Config} */
-module.exports = {
+export default {
   plugins: {
     'postcss-import': {},
     'postcss-preset-env': {
@@ -9,8 +9,8 @@ module.exports = {
       autoprefixer: {},
       features: {
         'custom-properties': true,
-      }
+      },
     },
-    ...(IS_PRODUCTION ? {cssnano: {}} : {})
-  }
+    ...(IS_PRODUCTION ? { cssnano: {} } : {}),
+  },
 }
