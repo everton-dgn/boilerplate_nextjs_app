@@ -184,6 +184,7 @@ pnpm check:update
 - This boilerplate enforces a strict quality bar. Read `guides/quality-constraints.md` before starting.
 - Commits must follow Conventional Commits for the automated release flow.
 - Use Node and pnpm versions defined in `package.json`.
+- Keep Node versions aligned across `package.json`, `.node-version`, `.nvmrc`, and GitHub Actions.
 
 <br />
 
