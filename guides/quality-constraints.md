@@ -11,6 +11,7 @@ applied locally and in CI.
   - `pnpm lint` and `pnpm biome:ci` fail on violations.
   - Formatter defaults: 2-space indent, 80-char line width, LF line endings.
   - Linting includes recommended rules plus a11y and complexity checks.
+  - Type-only imports must use `import type`.
 - Commitlint (commit format):
   - Conventional Commits are required.
   - Header length max is 120 characters.
@@ -35,8 +36,9 @@ applied locally and in CI.
 
 ## Import ordering
 
-Biome organizes imports and inserts blank lines between groups. The order is
-configured in `biome.json` and includes:
+Biome organizes imports and inserts blank lines between groups. It will rewrite
+import blocks when you run `pnpm format`. The order is configured in
+`biome.json` and includes:
 
 - Node built-ins
 - Next.js (`next`, `next/**`)
@@ -59,6 +61,25 @@ This means you should prefer absolute imports from `src` (enabled by
 
 ```ts
 import Button from 'components/Button'
+```
+
+## Change the Node version
+
+Keep these in sync when updating Node:
+
+- `package.json` `engines.node`
+- `.node-version`
+- `.nvmrc`
+- `.github/workflows/*.yml` (setup-node version)
+
+Use `lts/*` if you want the latest LTS across environments.
+
+## Development habit
+
+Run these frequently during development to avoid a large error backlog:
+
+```bash
+pnpm typecheck && pnpm lint
 ```
 
 ## Commit format
@@ -97,3 +118,18 @@ refactor(ui)!: migrate to new button API
 1) Run `pnpm format` and retry the commit.
 2) Run `pnpm lint`, `pnpm typecheck`, `pnpm test` locally.
 3) Fix issues before pushing.
+
+## Common errors and fixes
+
+- Biome import order error:
+  - Fix by running `pnpm format` to reorder imports and add group spacing.
+- Biome unused import/type error:
+  - Remove the unused import or convert it to `import type`.
+- Commitlint header too long:
+  - Shorten the subject or remove optional scope details.
+- Commitlint missing type:
+  - Use a valid type like `feat`, `fix`, `chore`, `ci`.
+- TypeScript strict error:
+  - Add explicit types or narrow unions instead of using `any`.
+- Pre-commit reformatting changes:
+  - Re-run `git status` and confirm the formatted files are staged.

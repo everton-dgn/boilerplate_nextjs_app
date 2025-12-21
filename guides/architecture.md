@@ -8,7 +8,7 @@ This boilerplate uses Next.js App Router and Atomic Design.
 - `src/components`: UI components by level (atoms, molecules, organisms).
 - `src/hooks`: reusable hooks.
 - `src/theme`: tokens and global styles.
-- `src/assets`: SVGs imported as components.
+- `src/assets`: SVGs imported as components and private assets imported by code.
 - `src/tests`: test helpers and Playwright E2E tests.
 - `src/@types`: global types and additional definitions.
 
@@ -18,7 +18,11 @@ This boilerplate uses Next.js App Router and Atomic Design.
 - molecules: composition of atoms with limited logic.
 - organisms: composition of molecules with local business rules.
 
-## SVGs as components
+## Assets and SVGs as components
+
+Use `src/assets` for files you want bundled and imported in code, including
+private assets not served by the web server. Use `public/` for static files
+that must be publicly accessible by URL.
 
 SVGs placed in `src/assets` can be imported as React components:
 

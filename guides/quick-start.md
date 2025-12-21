@@ -24,6 +24,12 @@ pnpm i
 pnpm dev
 ```
 
+During development, keep feedback tight by running:
+
+```bash
+pnpm typecheck && pnpm lint
+```
+
 ## Quality checks
 
 ```bash
