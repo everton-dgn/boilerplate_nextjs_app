@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  plugins: [tsconfigPaths(), react()],
+  plugins: [react()],
   test: {
     deps: {
       optimizer: {
@@ -36,6 +36,9 @@ export default defineConfig({
     exclude: ['**/node_modules/**', '**/playwright/**']
   },
   resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url))
+    },
     conditions: ['development', 'browser']
   }
 })
