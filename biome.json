@@ -163,7 +163,7 @@
         "noUnsafeFinally": "error",
         "noUnsafeOptionalChaining": "error",
         "noUnusedLabels": "error",
-        "noUnusedVariables": "off",
+        "noUnusedVariables": "error",
         "useExhaustiveDependencies": "off",
         "useHookAtTopLevel": "error",
         "useIsNan": "error",
@@ -293,6 +293,14 @@
     }
   },
   "overrides": [
+    {
+      "includes": ["src/@types/*.d.ts"],
+      "linter": {
+        "rules": {
+          "correctness": { "noUnusedVariables": "off" }
+        }
+      }
+    },
     {
       "includes": [
         "src/**/__tests__/**/*.{ts,tsx}",
