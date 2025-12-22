@@ -1,27 +1,29 @@
 colors: true
 
-prepare-commit-msg:
-  commands:
-    commitlint:
-      run: pnpm commitlint --edit $1
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --edit {1}
 
 pre-commit:
-  parallel: false
-  commands:
-    format:
-      run: pnpm format && git update-index --again
-    lint:
-      run: pnpm biome:ci
-    typecheck:
+  parallel: true
+
+  jobs:
+    - name: format
+      run: pnpm format && git add {staged_files}
+
+    - name: lint
+      run: pnpm lint
+
+    - name: typecheck
       run: pnpm typecheck
 
 pre-push:
   parallel: true
-  commands:
-    typescript:
-      run: pnpm typecheck
-    test:
-      run: pnpm test:ci {staged_files}
-#    packages-audit:
-#      tags: frontend security
+
+  jobs:
+    - name: test
+      run: pnpm test
+
+#    - name: packages-audit
 #      run: pnpm audit
