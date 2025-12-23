@@ -6,7 +6,7 @@ commit-msg:
       run: pnpm commitlint --edit {1}
 
 pre-commit:
-  parallel: true
+  parallel: false
 
   jobs:
     - name: format
