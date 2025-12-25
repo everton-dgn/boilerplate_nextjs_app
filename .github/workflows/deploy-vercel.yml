@@ -4,7 +4,6 @@ env:
   VERCEL_ORG_ID: ${{ secrets.ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.PROJECT_ID }}
   LEFTHOOK: 0
-  ENABLE_EXPERIMENTAL_COREPACK: 1
 
 on:
   push:
