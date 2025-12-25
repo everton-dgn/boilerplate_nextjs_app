@@ -51,13 +51,13 @@ jobs:
 
       #  build_deploy:
       - name: Pull Vercel Environment Information
-        run: pnpm dlx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        run: pnpm dlx --allow-build=esbuild vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Build Project Artifacts
-        run: pnpm dlx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: pnpm dlx --allow-build=esbuild vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy Project Artifacts to Vercel
-        run: pnpm dlx vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+        run: pnpm dlx --allow-build=esbuild vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
       #  release:
       - name: Release
