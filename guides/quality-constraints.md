@@ -24,7 +24,7 @@ applied locally and in CI.
   - You can bypass hooks with `git commit --no-verify` or `LEFTHOOK=0`, but
     do not use this in normal flow.
 - Node and pnpm (pinned versions):
-  - Node >= 22 and pnpm version from `package.json`.
+  - Node 24.x and pnpm version from `package.json`.
   - Avoid `npm` or `yarn` to keep the lockfile stable.
 - TypeScript (strict mode):
   - `strict: true`, `noImplicitAny`, `noUnusedLocals`, `noUncheckedIndexedAccess`.

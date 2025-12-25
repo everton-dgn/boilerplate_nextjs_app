@@ -5,7 +5,7 @@ when working in this repository. Follow these rules before proposing changes.
 
 ## Quick context
 - Stack: Next.js App Router + React 19 + TypeScript + CSS Modules.
-- Package manager: pnpm (do not use npm/yarn). Node >= 22.
+- Package manager: pnpm (do not use npm/yarn). Node 24.x.
 - Absolute imports via the `@/` alias (tsconfig `paths`).
 - App Router: `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`,
   `global-error.tsx`, `not-found.tsx`. Route groups use `(group)`.

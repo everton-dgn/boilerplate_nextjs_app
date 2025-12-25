@@ -16,11 +16,11 @@ Run `pnpm format` then `pnpm lint` for details.
 
 ## pnpm install fails with an engine error
 
-The repo enforces Node >= 22 and a pinned pnpm version. Update Node, then run:
+The repo enforces Node 24.x and a pinned pnpm version. Update Node, then run:
 
 ```bash
 corepack enable
-corepack prepare pnpm@latest --activate
+corepack prepare pnpm@10.26.2 --activate
 ```
 
 ## Typecheck fails with TypeScript errors

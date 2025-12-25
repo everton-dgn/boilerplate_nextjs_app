@@ -83,9 +83,9 @@ In addition to being constantly updated, this project was configured in the smal
 
 # :white_check_mark: Prerequisites
 
-- node (latest version lts).
+- node 24.x (see `package.json` `engines` and `.nvmrc`).
 
-- pnpm (latest version lts).
+- pnpm 10.x via Corepack (see `package.json` `packageManager`).
 
 <br />
 
@@ -138,8 +138,7 @@ pnpm test
 ```bash
 pnpm test:w
 ```
-
-Available in http://localhost:6006
+Runs in watch mode in the terminal.
 
 ## Run Lints
 

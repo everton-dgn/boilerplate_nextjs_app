@@ -4,12 +4,12 @@ This guide covers the minimum to run the boilerplate and understand the core flo
 
 ## Requirements
 
-- Node >= 22 (see `engines` in `package.json`).
-- pnpm (preferably via Corepack).
+- Node 24.x (see `engines` in `package.json`).
+- pnpm (preferably via Corepack, using the version in `packageManager`).
 
 ```bash
 corepack enable
-corepack prepare pnpm@latest --activate
+corepack prepare pnpm@10.26.2 --activate
 ```
 
 If `pnpm i` fails with an engine error, your Node or pnpm version is out of
@@ -51,8 +51,8 @@ pnpm test
 
 ## First-time issues
 
-- `pnpm i` fails with "Unsupported engine": install Node 22+ and re-run
-  `corepack prepare`.
+- `pnpm i` fails with "Unsupported engine": install Node 24.x and re-run
+  `corepack prepare pnpm@10.26.2 --activate`.
 
 ## Next steps
 

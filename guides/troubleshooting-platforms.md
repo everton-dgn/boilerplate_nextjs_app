@@ -15,7 +15,7 @@ This guide covers OS-specific issues and fixes. For general rules, read
 
 ## macOS
 
-- Use Node 22+ and enable Corepack for pnpm.
+- Use Node 24.x and enable Corepack for pnpm.
 - If Playwright cannot find Chrome, install Google Chrome and retry.
 
 ## Linux
