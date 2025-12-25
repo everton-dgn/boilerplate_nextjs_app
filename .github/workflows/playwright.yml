@@ -2,9 +2,11 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
@@ -14,7 +16,7 @@ jobs:
     steps:
       #  config_actions:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # add pnpm
       - name: Config pnpm
@@ -24,10 +26,10 @@ jobs:
 
       #  setup_node:
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: 'pnpm'
+          cache: pnpm
 
       #  install_dependencies:
       - name: Install Dependencies

@@ -7,9 +7,9 @@
   "description": "This application is a boilerplate for complex and large systems, especially those that need to scale with security and code quality.",
   "repository": "https://github.com/everton-dgn/boilerplate_nextjs_app",
   "scripts": {
-    "dev": "next dev --experimental-next-config-strip-types",
+    "dev": "next dev",
     "start": "next start",
-    "build": "next build --experimental-next-config-strip-types",
+    "build": "next build",
     "lint": "biome check",
     "format": "biome check --write",
     "biome:ci": "biome ci --no-errors-on-unmatched --files-ignore-unknown=true",
@@ -29,7 +29,7 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "dependencies": {
     "clsx": "2.1.1",
