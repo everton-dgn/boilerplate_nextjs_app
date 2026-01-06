@@ -26,8 +26,7 @@ const GlobalError = ({ error, reset }: ErrorProps) => (
     </head>
 
     <body className={inter.className}>
-      <ErrorFallback reset={reset} />
-      <p>{error.message}</p>
+      <ErrorFallback reset={reset} error={error} />
     </body>
   </html>
 )

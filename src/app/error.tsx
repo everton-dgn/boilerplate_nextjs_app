@@ -1,13 +1,25 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { useCallback } from 'react'
 
 import { ErrorFallback } from '@/components/organisms/ErrorFallback'
 
 const ErrorPage = () => {
-  const { replace } = useRouter()
+  const router = useRouter()
 
-  return <ErrorFallback reset={() => replace('/')} />
+  const handleReset = useCallback(() => {
+    try {
+      router.replace('/')
+    } catch {
+      // Fallback: attempt window location redirect if router fails
+      if (typeof window !== 'undefined') {
+        window.location.href = '/'
+      }
+    }
+  }, [router])
+
+  return <ErrorFallback reset={handleReset} />
 }
 
 export default ErrorPage
