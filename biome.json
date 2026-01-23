@@ -213,7 +213,18 @@
         "useCollapsedIf": "error",
         "noNestedTernary": "error",
         "noExportedImports": "error",
-        "noEnum": "error"
+        "noEnum": "error",
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "patterns": [
+              {
+                "group": ["../../../**"],
+                "message": "Deep relative imports (3+ levels) are not allowed. Use tsconfig.json aliases instead."
+              }
+            ]
+          }
+        }
       },
       "suspicious": {
         "useNamespaceKeyword": "error",
