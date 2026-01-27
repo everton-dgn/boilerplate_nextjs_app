@@ -70,12 +70,55 @@ This means you should prefer absolute imports from `src` (enabled by
 import Button from '@/components/Button'
 ```
 
+## Biome lint rules
+
+The linter uses strict rules to enforce code quality. Key rules include:
+
+### Naming conventions (`useNamingConvention`)
+
+- **Variables**: `camelCase`, `CONSTANT_CASE`, or `PascalCase` (for React components)
+- **Functions**: `camelCase`, `PascalCase`, or `CONSTANT_CASE`
+- **Types/Classes**: `PascalCase`
+- **Enum members**: `CONSTANT_CASE`
+- **Object properties**: any (to support external APIs)
+
+### File naming (`useFilenamingConvention`)
+
+- Allowed: `kebab-case`, `camelCase`, `PascalCase`
+- Example: `Button.tsx`, `useCount.ts`, `my-component.tsx`
+
+### Disallowed patterns
+
+- `enum` → use `as const` objects instead
+- `var` → use `let` or `const`
+- Barrel files (`index.ts` re-exporting everything)
+- Re-export all (`export * from`)
+- Deep relative imports (3+ levels like `../../../`)
+- Yoda conditions (`if (5 === x)`)
+- Accumulating spread in loops (`[...arr, item]` in forEach)
+
+### Code quality rules
+
+- `noEvolvingTypes`: variables must have stable types
+- `useAwait`: async functions must use await
+- `noUselessStringConcat`: avoid `"a" + "b"` when template literals work
+- `noAccumulatingSpread`: avoid performance issues with spread in loops
+
+### Domains enabled
+
+- `test`: rules for test files
+- `next`: Next.js specific rules
+- `react`: React specific rules
+- `project`: project-wide analysis (type inference, imports)
+
 ## Common failure patterns
 
 - Import order or unused imports: run `pnpm format`.
 - Line endings: the repo expects LF; CRLF can trigger Biome changes.
 - Case-sensitive paths: CI runs on Linux, so import casing must match files.
 - Disallowed patterns: no `enum`, no barrel files, no re-export-all.
+- Naming convention: use `camelCase` for variables, `PascalCase` for components.
+- Deep imports: use `@/` aliases instead of `../../../`.
 
 ## Change the Node version
 
