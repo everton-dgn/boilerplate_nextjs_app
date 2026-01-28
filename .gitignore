@@ -43,3 +43,9 @@ tsconfig.tsbuildinfo
 .eslintcache
 .stylelintcache
 .husky
+
+# claude code
+.claude/
+
+# serena
+.serena/
