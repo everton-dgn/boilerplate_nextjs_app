@@ -56,8 +56,8 @@ pnpm test
 
 ## Next steps
 
-- Quality constraints: `guides/quality-constraints.md`
-- Architecture: `guides/architecture.md`
-- Workflows: `guides/workflows.md`
-- FAQ: `guides/faq.md`
-- Troubleshooting by platform: `guides/troubleshooting-platforms.md`
+- Quality constraints: `./quality-constraints.md`
+- Architecture: `./architecture.md`
+- Workflows: `./workflows.md`
+- FAQ: `./faq.md`
+- Troubleshooting by platform: `./troubleshooting-platforms.md`

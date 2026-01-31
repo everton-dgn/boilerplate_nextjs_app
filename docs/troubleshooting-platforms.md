@@ -1,7 +1,7 @@
 # Troubleshooting by platform
 
 This guide covers OS-specific issues and fixes. For general rules, read
-`guides/quality-constraints.md`.
+`./quality-constraints.md`.
 
 ## Shared gotchas
 

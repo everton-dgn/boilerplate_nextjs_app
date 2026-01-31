@@ -77,5 +77,5 @@ Conventional Commits.
 
 ## Related guides
 
-- SVG imports and Next.js feature flags: `guides/architecture.md`
-- Commit rules and import order: `guides/quality-constraints.md`
+- SVG imports and Next.js feature flags: `./architecture.md`
+- Commit rules and import order: `./quality-constraints.md`

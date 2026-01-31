@@ -1,9 +1,9 @@
-# AGENT
+# CLAUDE
 
-This file guides LLMs (Claude, Codex, Cursor, Junie, JetBrains AI etc.)
-when working in this repository. Follow these rules before proposing changes.
+Instructions for Claude Code when working in this repository.
 
 ## Quick context
+
 - Stack: Next.js App Router + React 19 + TypeScript + CSS Modules.
 - Package manager: pnpm (do not use npm/yarn). Node 24.x.
 - Absolute imports via the `@/` alias (tsconfig `paths`).
@@ -12,6 +12,7 @@ when working in this repository. Follow these rules before proposing changes.
 - SVGs in `src/assets` can be imported as React components (`@svgr/webpack`).
 
 ## Project structure
+
 - `src/app`: routes and layouts for the App Router.
 - `src/components`: Atomic Design (atoms, molecules, organisms).
 - `src/hooks`: reusable hooks.
@@ -22,6 +23,7 @@ when working in this repository. Follow these rules before proposing changes.
 - `src/@types`: global types.
 
 ## Code standards
+
 - Atomic Design: atoms do not depend on organisms; avoid cross-coupling.
 - Typical components:
   - `index.tsx` (named export), `types.ts`, `styles.module.css`.
@@ -33,6 +35,7 @@ when working in this repository. Follow these rules before proposing changes.
 - Keep exact path casing (CI and Linux are case-sensitive).
 
 ## Tests
+
 - Unit/integration: Vitest + Testing Library.
   - `pnpm test`, `pnpm test:w`, `pnpm test:c`, `pnpm test:ui`.
   - Helpers in `src/tests/providers` and `src/tests/helpFunctions`.
@@ -41,6 +44,7 @@ when working in this repository. Follow these rules before proposing changes.
   - Uses `BASE_URL_TEST` from `.env.test` and Chrome (`channel: 'chrome'`).
 
 ## Quality and CI
+
 - Biome: formats and validates. Run `pnpm format` and `pnpm lint`.
   - 2 spaces, 80 columns, LF, import ordering.
 - TypeScript strict: `pnpm typecheck`.
@@ -49,10 +53,12 @@ when working in this repository. Follow these rules before proposing changes.
 - Commits must follow Conventional Commits; releases via semantic-release.
 
 ## Recommended flow
+
 1) `pnpm dev`
 2) Before opening a PR: `pnpm format`, `pnpm lint`, `pnpm typecheck`, `pnpm test`
 
 ## Internal references
+
 - `docs/architecture.md`
 - `docs/quality-constraints.md`
 - `docs/workflows.md`

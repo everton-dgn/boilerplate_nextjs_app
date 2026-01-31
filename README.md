@@ -168,12 +168,12 @@ pnpm check:update
 
 # :books: Guides
 
-- [Quick start](./guides/quick-start.md)
-- [Quality constraints](./guides/quality-constraints.md)
-- [Architecture](./guides/architecture.md)
-- [Workflows](./guides/workflows.md)
-- [FAQ](./guides/faq.md)
-- [Troubleshooting by platform](./guides/troubleshooting-platforms.md)
+- [Quick start](./docs/quick-start.md)
+- [Quality constraints](./docs/quality-constraints.md)
+- [Architecture](./docs/architecture.md)
+- [Workflows](./docs/workflows.md)
+- [FAQ](./docs/faq.md)
+- [Troubleshooting by platform](./docs/troubleshooting-platforms.md)
 
 <br />
 
@@ -181,7 +181,7 @@ pnpm check:update
 
 # :rotating_light: Important Considerations
 
-- This boilerplate enforces a strict quality bar. Read `guides/quality-constraints.md` before starting.
+- This boilerplate enforces a strict quality bar. Read `docs/quality-constraints.md` before starting.
 - Commits must follow Conventional Commits for the automated release flow.
 - Use Node and pnpm versions defined in `package.json`.
 - Keep Node versions aligned across `package.json`, `.node-version`, `.nvmrc`, and GitHub Actions.

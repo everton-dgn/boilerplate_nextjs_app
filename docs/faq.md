@@ -58,7 +58,7 @@ Make sure you run tests from the repo root and that `.env.test` sets
 ## pnpm install fails on Windows
 
 The `postinstall` script uses POSIX shell syntax. Use WSL or Git Bash and see
-`guides/troubleshooting-platforms.md` for details.
+`./troubleshooting-platforms.md` for details.
 
 ## How do I import SVGs as components?
 
