@@ -190,3 +190,12 @@ refactor(ui)!: migrate to new button API
   - Add explicit types or narrow unions instead of using `any`.
 - Pre-commit reformatting changes:
   - Re-run `git status` and confirm the formatted files are staged.
+
+## Dependencies
+
+- **Exact versions** — `.npmrc` contains `save-exact=true`. Every `pnpm add`
+  saves without `^` or `~` (e.g., `"1.2.3"` instead of `"^1.2.3"`).
+- **Why**: deterministic builds, no minor/patch surprises.
+- **Watch out for generators**: `shadcn add` and similar tools may ignore this
+  config. Always check `package.json` after using generators and remove
+  `^`/`~` prefixes if necessary.
