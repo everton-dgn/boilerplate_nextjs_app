@@ -11,7 +11,6 @@ const alias = {
 const shared = {
   pool: 'threads' as const,
   css: false,
-  experimental: { fsModuleCache: true },
   globals: true,
   passWithNoTests: true,
   clearMocks: true,
