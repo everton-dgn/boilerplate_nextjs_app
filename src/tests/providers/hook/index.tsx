@@ -4,14 +4,14 @@ import { MainProvider } from '@/components/atoms/MainProvider'
 
 import { type RenderHookResult, renderHook } from '@testing-library/react'
 
-import type { RenderHooksProviderProps, WrapperProps } from './types'
+import type { WrapperProps } from './types'
 
 const wrapper = ({ children }: WrapperProps): ReactNode => (
   <MainProvider>{children}</MainProvider>
 )
 
-export const renderHooksProvider = (
-  children: RenderHooksProviderProps
-): RenderHookResult<any, any> => {
-  return renderHook(children, { wrapper })
+export const renderHooksProvider = <T,>(
+  callback: () => T
+): RenderHookResult<T, unknown> => {
+  return renderHook(callback, { wrapper })
 }

@@ -110,7 +110,10 @@
       },
       "complexity": {
         "noImportantStyles": "off",
-        "noExcessiveCognitiveComplexity": "off",
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": { "maxAllowedComplexity": 21 }
+        },
         "useFlatMap": "error",
         "noUselessUndefinedInitialization": "error",
         "noUselessLabel": "error",
@@ -293,7 +296,7 @@
         "noDuplicateParameters": "error",
         "noEmptyBlockStatements": "error",
         "noEmptyInterface": "error",
-        "noExplicitAny": "off",
+        "noExplicitAny": "error",
         "noExtraNonNullAssertion": "error",
         "noFallthroughSwitchClause": "error",
         "noFunctionAssign": "error",
@@ -357,15 +360,6 @@
     }
   },
   "overrides": [
-    {
-      "includes": ["src/@types/**/*.d.ts"],
-      "linter": {
-        "rules": {
-          "correctness": { "noUnusedVariables": "off" },
-          "style": { "useNamingConvention": "off" }
-        }
-      }
-    },
     {
       "includes": [
         "src/**/__tests__/**/*.{ts,tsx}",
