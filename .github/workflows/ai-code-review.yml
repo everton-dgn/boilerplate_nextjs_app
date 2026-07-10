@@ -1,0 +1,76 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+    paths-ignore:
+      - '.github/workflows/**'
+
+# permissions: definidas por job (least-privilege) — sem escopo no
+# nível do workflow.
+
+jobs:
+  claude:
+    if: |
+      github.actor == 'everton-dgn' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    concurrency:
+      group: ai-code-review-claude-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    steps:
+      # @v1 é ref móvel intencional (propagação automática de atualizações
+      # do ci-shared aos consumidores). Rollback via
+      # `git push origin <sha>:v1 --force-with-lease`. Ver README#Segurança.
+      - uses: everton-dgn/ci-shared/ai-code-review@v1 # zizmor: ignore[unpinned-uses]
+        with:
+          provider: claude
+          api-key: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+  glm:
+    if: |
+      github.actor == 'everton-dgn' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    concurrency:
+      group: ai-code-review-glm-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    steps:
+      # Ver comentário no job `claude` sobre @v1.
+      - uses: everton-dgn/ci-shared/ai-code-review@v1 # zizmor: ignore[unpinned-uses]
+        with:
+          provider: glm
+          api-key: ${{ secrets.ZAI_API_KEY }}
+
+  minimax:
+    if: |
+      github.actor == 'everton-dgn' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    concurrency:
+      group: ai-code-review-minimax-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    steps:
+      # Ver comentário no job `claude` sobre @v1.
+      - uses: everton-dgn/ci-shared/ai-code-review@v1 # zizmor: ignore[unpinned-uses]
+        with:
+          provider: minimax
+          api-key: ${{ secrets.MINIMAX_API_KEY }}
